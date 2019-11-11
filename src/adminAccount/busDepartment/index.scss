@@ -1,0 +1,98 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busDepartment-box{
+    width:975px;
+    min-height: 644px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busDepartment-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .busDepartment-table-box{
+            padding-bottom: 30px;
+        }
+        .class-pagination-box{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    
+}
+.title{
+    font-size:14px;
+    color: #2277E6;
+    font-weight:bold;
+    padding-top: 30px;
+    border-bottom: 1px solid #EEEEEE;
+    span{
+        display: inline-block;
+        height: 20px;
+        line-height: 6px;
+        border-bottom: 2px solid #2277E6;
+    }
+}
+.table-title{
+    height: 50px;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 25px;
+    font-size:14px;
+    color: #333333;
+    .table-title-font{
+        display: flex;
+        flex-direction: row;
+        .iconbumen,.iconshenpi,.iconxiangmu,.iconwj-zd,.iconzhangqi{
+            margin-right: 10px;
+            font-size: 18px;
+            color: #2277E6;
+        }
+        div{
+            margin-top: 3px;
+        }
+    }
+    
+}
+.table-btn{
+    span{
+        color: #878787;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    span:hover{
+        color: #2277E6;
+    }
+}
+// 编辑弹窗
+/* .busDepartment-edit-model{
+    .ant-modal-header{
+        border-bottom: none;
+        padding: 20px 24px 0 24px;
+    }
+    .ant-modal-title{
+        text-align: center;
+        font-size:18px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 0px 0px 0px;
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 16px 16px 50px 16px;
+    }
+    .busDepartment-edit-btn{
+        text-align: center;
+    }
+} */

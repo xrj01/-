@@ -1,0 +1,52 @@
+@import "./../../colorConfig";
+.compare-bar-input{
+  input{
+    text-align: center;
+  }
+}
+.modal-comparison-btn{
+    width: 80px !important;
+    height: 28px !important;
+    padding: 4px !important;
+    font-size: 12px !important;
+}
+.price-comparison-table-box{
+    th{
+        text-align: center !important;
+    }
+  .price-comparison-input-number{
+    width: 130px;
+    display: flex;
+    height: 32px;
+    border: solid 1px $borderBottom;
+    border-radius: 4px;
+    overflow: hidden;
+    button{
+      width: 30px;
+      height: 32px;
+      line-height: 32px;
+      outline: none;
+      cursor: pointer;
+      background: #FAFAFA;
+      border-right: solid 1px $borderBottom;
+      &:last-child{
+        border-right: none;
+        border-left: solid 1px $borderBottom;
+      }
+    }
+    .ant-input-number{
+      border: none;
+    }
+    .ant-input-number:hover,.ant-input-number:focus{
+      border: none;
+      box-shadow: 0 0 0 0 $red;
+    }
+    .price-comparison-input{
+      width: 70px;
+    }
+    input{
+      text-align: center;
+      border:none;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busStatistics-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busStatistics-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .busStatistics-title{
+            font-size:18px;
+            color: $c66;
+            border-bottom: 1px solid $e8e;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        .data-filter-btn-box{
+            padding: 25px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .busStatistics-container-box{
+                label{
+                    border-radius: 0;
+                }
+                .ant-radio-button-wrapper-checked{
+                    background:#1890ff;
+                    color: #fff;
+                }
+            }
+        }
+        .table-title{
+            margin-top: 0;
+        }
+        .busStatistics-overview{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            &>div{
+                border: 1px solid $EEE;
+                //border-top: none;
+                width: 190px;
+                height: 100px;
+                margin-left: -1px;
+                padding: 28px 0 0 18px;
+                .ant-statistic-title{
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                }
+                .ant-statistic-content{
+                    font-size: 22px;
+                    line-height: 1;
+                    color: $red;
+                }
+            }
+            &>div:first-child,&>div:nth-of-type(6n){
+                margin: 0;
+                width: 189px;
+            }
+            /* &>div:nth-child(1),:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5){
+                border-bottom:none;
+            } */
+        }
+        .busStatistics-page{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+            .ant-pagination-item-link{
+                padding: 0 10px;
+            }
+        }
+        .th-font{
+            font-size: 12px;
+        }
+    }
+    
+}
+

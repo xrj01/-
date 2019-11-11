@@ -1,0 +1,120 @@
+@import "./../../colorConfig";
+.user-invoice-management{
+  width: 100%;
+  height: 100%;
+  background: $fff;
+  padding: 15px;
+  position: relative;
+  .ant-btn{
+    border-color: $red;
+    color: $red;
+    font-size: 12px;
+  }
+  .ant-tabs-nav .ant-tabs-tab:hover {
+    color: #333;
+  }
+  .ant-tabs-nav .ant-tabs-tab:active{
+    color: #333;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active{
+    color: #333;
+  }
+  .ant-tabs-ink-bar{
+    background-color: $red;
+  }
+  .user-invoice-btn{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  button:hover,button:focus{
+    color: $red;
+    border-color: $red;
+  }
+
+  .user-table-btn{
+    span{
+      cursor: pointer;
+      font-size: 12px;
+    }
+    span:hover{
+      color: #2277E7;
+    }
+    :nth-child(1){
+      margin-right: 10px;
+      
+    }
+  }
+  .th-font{
+    font-size: 14px;
+  }
+  .table-box{
+    
+  }
+  .user-invoice-table{
+    .row-font{
+      font-size: 12px;
+    }
+    .ant-table-thead > tr > th{
+        text-align: center;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 14px 10px;
+    }
+    .ant-table-tbody > tr > td{
+        font-size: 12px;
+    }
+  }
+}
+//新建、编辑弹窗
+.user-edit-model{
+    .ant-modal-header{
+        border-bottom: 0px;
+    }
+  .ant-modal-footer{
+    border-top: none;
+    padding: 26px 0 50px 0;
+  }
+  
+  .user-edit-btn{
+    text-align: center;
+    
+  }
+  .save-btn{
+    background-color: #D01D00;
+    color: #fff;
+    input{
+      border-radius: 4px;
+      &:hover,&:active,&:focus{
+        border-color: $red;
+      }
+    }
+  }
+  /* .ant-btn-danger:hover{
+    color: #fff;
+    background-color: #D01D00;
+    border-color: #D01D00;
+  } */
+  .ant-btn-danger:focus {
+    color: #fff;
+    background-color: #D01D00;
+    border-color: #D01D00;
+  }
+  .delete{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+}
+.delete-modal{
+    .delet-title{
+        font-size: 16px;
+        color: #333;
+        margin: 16px 0 50px 0;
+        i{
+            color: #FAAD14;
+        }
+    }
+}

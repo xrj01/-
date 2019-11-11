@@ -1,0 +1,178 @@
+@import "./../../colorConfig";
+.order-pay-warp{
+  width: 100%;
+  .order-pay-box{
+    width: 1200px;
+    margin: 0 auto 56px;
+    h5{
+      font-size: 16px;
+      color: $c33;
+      line-height: 40px;
+      margin-top: 10px;
+    //   font-weight:bold;
+    }
+    h6{
+      font-size: 16px;
+      color: $c33;
+      line-height: 40px;
+      margin-top: 20px;
+    //   font-weight:bold;
+      border-bottom: dashed 1px $borderBottom;
+      span{
+        color: $red;
+      }
+    }
+    .order-pay-title-box{
+      width: 100%;
+      border:solid 1px $borderBottom;
+      background: #FCFCFC;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      i{
+        color: #7ABD54;
+        font-size: 64px;
+        margin-right: 25px;
+      }
+      .order-pay-content{
+        flex: 3;
+        h4{
+          font-size: 16px;
+          color: $c33;
+          font-weight: bold;
+        }
+        p{
+          color: $c99;
+          font-size: 14px;
+          margin: 0;
+          span{
+            color: $red;
+          }
+        }
+      }
+      .order-pay-total{
+        flex: 1;
+        text-align: right;
+        font-size: 14px;
+        color: $c33;
+        span{
+          color: $red;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .order-project-list{
+      width: 100%;
+      display: flex;
+      padding: 10px 0;
+      align-items: center;
+      flex-wrap: wrap;
+      div{
+        padding: 10px 30px;
+        border: solid 1px $borderBottom;
+        border-radius: 4px;
+        margin-right: 36px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: $c66;
+        position: relative;
+        background: $fff;
+        cursor: pointer;
+        &.active{
+          border: solid 1px $red;
+          &:after{
+            content: "";
+            display: block;
+            width: 25px;
+            height: 16px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: url(./../../image/img_checked.png) no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .order-pay-upload-box{
+      width: 1200px;
+      border-radius: 4px;
+      padding: 16px;
+      border: solid 1px $borderBottom;
+      background: $fff;
+      .ant-upload-list-item .anticon-close{
+        font-size: 14px;
+      }
+      .ant-btn:hover,.ant-btn:focus{
+        border: solid 1px $red !important;
+        color: $red !important;
+      }
+      .ant-upload-list{
+        display: none;
+        flex-wrap: wrap;
+        .ant-upload-list-item{
+          margin-right: 16px;
+        }
+      }
+
+      .pay-order-file-list-box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        .pay-order-file-list{
+          width: 49%;
+          padding:10px 5px;
+          border: solid 1px $borderBottom;
+          border-radius: 6px;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 2%;
+          position: relative;
+          em{
+            width: 40px;
+            height: 35px;
+            margin-right: 10px;
+            background: url(./../../image/img_wj.png) no-repeat;
+            background-size: 100% 100%;
+          }
+          p{
+            flex: 1;
+            margin: 0;
+          }
+          &:nth-child(2n){
+            margin-right: 0;
+          }
+          i{
+            position: absolute;
+            right: 5px;
+            top: 2px;
+            color: $c99;
+            display: none;
+          }
+          &:hover i{
+            display: block;
+          }
+        }
+      }
+    }
+    .order-button-box{
+      width: 100%;
+      text-align: center;
+      padding-top: 60px;
+      button{
+        width: 260px;
+        height: 40px;
+        background: $red;
+        font-size: 16px;
+        border: solid 1px $red;
+      }
+    }
+  }
+}
+.ant-modal-confirm-warning .ant-modal-confirm-body > .anticon, .ant-modal-confirm-confirm .ant-modal-confirm-body > .anticon{
+  color: #faad14 !important;
+}

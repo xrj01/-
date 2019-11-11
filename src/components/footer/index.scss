@@ -1,0 +1,28 @@
+$e99:#999;
+.pt_footer-box{
+  width: 100%;
+  padding: 0 0;
+  height: 150px;
+  background: #4C4C4C;
+  overflow: hidden;
+
+  p{
+    margin: 0px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    height: 20px;
+    color: #DEDEDE;
+    a{
+      color: #DEDEDE;
+      display: inline-block;
+      height: 22px;
+    }
+    a:hover{
+      border-bottom: 1px #DEDEDE solid;
+    }
+  }
+  .footer-box{
+    margin-top: 43px;
+  }
+}

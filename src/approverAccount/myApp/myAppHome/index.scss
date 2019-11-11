@@ -1,0 +1,274 @@
+@import "./../../../colorConfig";
+.myApp-box{
+  /* width:975px;
+  margin-left: 15px;
+  margin-bottom: 47px;
+  background:$fff; */
+  .myApp-nodata{
+
+    background: url('./../../../image/img_zwnr.png') no-repeat center;
+    height: 400px;
+  }
+  .admin-myApp-nodata{
+    //height: 529px;
+    line-height: 418px;
+    background: #fff;
+    margin-top: 15px;
+    text-align: center;
+
+    position: relative;
+    span{
+        position: absolute;
+        top: 70px;
+        left:447px;
+        font-size: 14px;
+        color: #666;
+    }
+    img{
+      margin-bottom: 15px;
+    }
+  }
+  .myApp-container{
+      /* min-height: 644px;
+      margin: 0 15px;
+      padding-top: 10px;
+      .ant-tabs-bar{
+        margin-bottom: 0;
+      } */
+      // 搜索
+      .myApp-nav{
+          margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .myApp-nav-input{
+              display: flex;
+              flex-direction: row;
+              /* input{
+                  height: 35px;
+              } */
+              .marginR{
+                  margin-right: 12px;
+              }
+              .width-176{
+                  width: 150px;
+                  //border-radius: 4px;
+              }
+              .width-152{
+                  width: 152px;
+                  //border-radius: 4px;
+              }
+              .width-168{
+                  width: 168px;
+              }
+              .width-100{
+                  width: 100px;
+              }
+              /* .ant-select-selection{
+                  border-radius: 0;
+              } */
+          }
+          .myApp-nav-btn{
+              button{
+                  width: 71px;
+                  margin-left: 20px;
+              }
+              
+          }
+          
+      }
+      // 内容
+      .myApp-content{
+         margin-top: 25px;
+        .myApp-content-top{
+          background-color: #EEEEEE;
+          height: 100px;
+          padding: 17px 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .myApp-content-top-link{
+            font-size: 12px;
+            color: #666;
+            line-height: 23px;
+            cursor: pointer;
+            a{
+              color: #666;
+            }
+            a:hover{
+              color: #2277E6;
+            }
+            &>div:hover{
+              color: #2277E6;
+            }
+          }
+          button{
+            width: 80px;
+            height: 30px;
+            border: 1px solid #2277E6;
+            color: #2277E6;
+            background-color: #EEEEEE;
+            font-size: 12px;
+          }
+          button:hover{
+            background-color: #2277E6;
+            color: #fff;
+          }
+          .width300{
+            width: 270px;
+          }
+          
+          .margin33{
+            //margin-right: 43px;
+            width: 108px;
+          }
+          .width440{
+            width: 480px;
+          }
+          .mt10{
+            margin-top: 10px;
+          }
+          .mt30{
+            margin-top: 25px;
+          }
+          .ft14{
+            font-size: 14px;
+            color: #333;
+          }
+        }
+        .myApp-content-footer{
+          height: 50px;
+          border: 1px solid #eee;
+          font-size: 14px;
+          color: #666;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          :nth-child(1){
+            width: 320px;
+            height: 50px;
+            border-right: 1px solid #eee;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            //justify-content: center;
+          }
+          :nth-child(2),:nth-child(3){
+            width: 150px;
+            height: 50px;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+          :nth-child(4){
+            width: 328px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .class-pagination-box{
+          text-align: center;
+          margin-top: 50px;
+          padding-bottom: 50px;
+      }
+      
+  }
+  
+  
+}
+.busUser-turn-model{
+  .busUser-turn-title{
+    font-size: 14px !important;
+    margin-bottom: 30px;
+  }
+  .busUser-turn-checkbox{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    button{
+      margin-bottom: 30px;
+      border-radius: 76px;
+      margin-right: 20px;
+      span{
+        font-size: 14px !important;
+        color: #999;
+      }
+    }
+    .active{
+      background-color: #2580F4;
+      span{
+        color: #fff;
+      }
+      
+    }
+  }
+  .busUser-turn-other{
+    font-size: 14px !important;
+    margin-bottom: 20px;
+  }
+  .ant-modal-header{
+      //border-bottom: none;
+      padding: 20px;
+  }
+  .ant-modal-title{
+      //text-align: center;
+      font-size:16px;
+      //font-weight: bold;
+      color: #333;
+      //margin-top: 20px;
+  }
+  .ant-modal-body{
+      padding: 40px;
+      div{
+          //text-align: center;
+          color: #333;
+          margin-left: 0px;
+          font-size: 16px;
+      }
+  }
+  .ant-modal-footer{
+      border-top: none;
+      padding: 0px 40px 40px 0px;
+      text-align: right;
+      .ant-btn-primary{
+        margin-left: 10px;
+      }
+  }
+  .busUser-turn-btn{
+      /* text-align: left;
+      margin-left: 103px; */
+      //text-align: center;
+  }
+  .ant-form-explain{
+    font-size: 12px !important;
+  }
+}
+.appProcess-steps{
+  width: 480px !important;
+  padding: 15px !important;
+  height: 335px;
+  border: 1px solid #eee;
+  font-size: 14px !important;
+  .ant-steps-item-content{
+    width: 400px !important;
+    
+  }
+  .appProcess-steps-title{
+    font-size: 14px !important;
+  }
+  .appProcess-steps-activeTitle{
+    p{
+      font-size: 14px !important;
+      margin: 0;
+    }
+    
+  }
+}

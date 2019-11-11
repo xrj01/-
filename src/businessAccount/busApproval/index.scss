@@ -1,0 +1,20 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busApproval-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busApproval-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .class-pagination-box{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    
+}

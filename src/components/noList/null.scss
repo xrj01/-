@@ -1,0 +1,33 @@
+@import "../../colorConfig";
+.searchNull{
+//   width: 1200px;
+    width: 50%;
+    // height: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    overflow: hidden;
+    transform: translate(0, 50%);
+//   margin-bottom: 20px;
+  .imgBox{
+    // margin-top: 120px;
+    text-align: center;
+    .nullImg{
+      width: auto;
+    }
+  }
+  .textBox{
+    text-align: center;
+    // margin-top: 33px;
+    font-size: 16px;
+    color: #666;
+    p{
+    //   line-height: 50px;
+      margin: 0;
+    }
+    span{
+      color: $red;
+    }
+  }
+
+}

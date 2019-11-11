@@ -1,0 +1,20 @@
+.commonform{
+    .ant-select-selection--single{
+        height: 42px;
+    }
+    .ant-select-selection-selected-value{
+        margin-top: 4px;
+    }
+    .ant-cascader-input.ant-input{
+        height: 42px;
+        border-radius: 4px;
+    }
+    input{
+        height: 42px;
+        // width: 290px;
+        border-radius: 4px;
+    }
+    .ant-select-selection__placeholder, .ant-select-search__field__placeholder{
+        top: 65%;
+    }
+}

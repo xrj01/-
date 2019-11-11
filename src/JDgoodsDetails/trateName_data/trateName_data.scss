@@ -1,0 +1,47 @@
+@import "../../colorConfig";
+.trateName_box{
+  float: left;
+  .trateName{
+    width: 248px;
+    background-color: #fff;
+  }
+  .title{
+    height: 58px;
+    width: 230px;
+    border-bottom: 1px $f3f solid;
+    line-height: 58px;
+    //text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 9px;
+  }
+  .tel_box{
+    margin-left: 15px;
+    margin-top: 31px;
+    span{
+      color:$B9B9;
+    }
+  }
+  .button:hover{
+    color: $red;
+    border: 1px $red solid ;
+
+  }
+  .button{
+    width: 106px;
+    height: 32px;
+  }
+  .button:nth-child(2){
+  margin-left: 10px;
+  }
+  .button_box{
+    margin-left: 14px;
+  }
+  .description{
+    margin-left: 15px;
+    margin-right: 18px;
+    width: 215px;
+    overflow: hidden;
+  }
+
+}

@@ -1,0 +1,62 @@
+@import "../../colorConfig";
+
+.commodity{
+  margin-top: 20px;
+  .title{
+    width: 57px;
+    height: 15px;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+  }
+  .compare_title_box{
+    background-color:$EEE;
+    height: 50px;
+    line-height: 51px;
+    font-weight: 600;
+
+  }
+  .details-contrast-number{
+    border: solid 1px $borderBottom;
+    display: flex;
+    width: 110px;
+    margin-bottom: auto;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 4px;
+    button{
+      width: 30px;
+      height: 28px;
+      line-height: 30px;
+      text-align: center;
+      outline: none;
+      &:last-child{
+        border-left: solid 1px $borderBottom;
+      }
+      &:first-child{
+        border-right: solid 1px $borderBottom;
+      }
+    }
+    .ant-input-number:focus{
+      box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+    .ant-input-number{
+      flex: 1;
+      height: 28px;
+      border: none;
+      input{
+        border:none;
+        text-align: center;
+      }
+    }
+  }
+  .ant-btn:hover,.ant-btn:focus{
+    border: solid 1px $red !important;
+    color: $red !important;
+  }
+}
+.compare_table{
+  background-color: #fff;
+}
+

@@ -1,0 +1,20 @@
+@import "./../../colorConfig";
+.thatTemplate-box{
+  .backTop_tel{
+    position: fixed;
+    // right: 10px;
+    i{
+      right: 10px;
+      top: 0px!important;
+    }
+  }
+  h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  p{
+    line-height:30px;
+  }
+}

@@ -1,0 +1,117 @@
+@import "./../colorConfig";
+$c66:#666;
+$red:#D01D00;
+$c33:#333;
+.supplies-box{
+    ul{
+        margin-bottom: 0;
+    }
+  width: 100%;
+  margin-top: 20px;
+  .supplies-title{
+    width: 100%;
+    display: flex;
+    padding: 20px 0 20px 0;
+    justify-items: center;
+    align-items: center;
+    .supplies-name{
+      flex: 1;
+      font-size:22px;
+      color: $c33;
+      height: 22px;
+      line-height: 22px;
+      font-weight: bold;
+      padding-left: 10px;
+      border-left: solid 6px $c33;
+    }
+    .supplies-nav-list{
+      flex: 2;
+      text-align: right;
+      a{
+        font-size: 14px;
+        color: $c66;
+        cursor: pointer;
+        margin-left: 10px;
+        &.active{
+          color: #D01D00;
+        }
+        &:hover{
+          color: #D01D00;
+        }
+      }
+    }
+  }
+  .supplies-list-box{
+    width: 100%;
+    display: flex;
+    .supplies-summary{
+      width: 232px;
+      display: flex;
+      margin-right: 10px;
+      flex-direction: column;
+      height: 710px;
+      justify-items: center;
+      align-items: center;
+      .supplies-summary-advertising{
+        text-align: center;
+        padding-top: 90px;
+        h6{
+          height:26px;
+          font-size:26px;
+          font-weight:400;
+          color:rgba(85,85,85,1);
+          line-height:36px;
+        }
+        h5{
+          height:17px;
+          font-size:18px;
+          font-weight:400;
+          color:rgba(116,116,116,1);
+          margin-top: 20px;
+        }
+      }
+      img{
+        margin: 100px 0 75px;
+      }
+
+      a{
+        width:134px;
+        height:30px;
+        background:$red;
+        border-radius:15px;
+        text-align: center;
+        line-height: 30px;
+        color: $fff;
+      }
+    }
+
+    .supplies-list{
+      flex: 1;
+
+      ul{
+        width: 100%;
+        display: flex;
+        height: 710px;
+        flex-wrap: wrap;
+        li{
+          margin-bottom: 10px;
+          &:nth-child(4n){
+            margin-right: 0;
+          }
+          &:nth-child(5){
+            margin-bottom: 0;
+          }
+          &:nth-child(6){
+            margin-bottom: 0;
+          }
+          &:nth-child(7){
+            margin-bottom: 0;
+          }
+          &:nth-child(8){
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

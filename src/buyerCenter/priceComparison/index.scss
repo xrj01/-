@@ -1,0 +1,134 @@
+@import "./../../colorConfig";
+.price-comparison-box{
+  width: 100%;
+  height: 100%;
+  background: $fff;
+  padding: 15px;
+  font-size: 14px;
+  .ant-btn-primary{
+    background: $red !important;
+    border: solid 1px $red !important;
+  }
+  .ant-btn-primary:hover,.ant-btn-primary:focus{
+    color: $fff !important;
+  }
+  .price-comparison-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: solid 1px $borderBottom;
+    span{
+      font-size: 14px;
+      display: inline-block;
+      position: relative;
+      padding: 0 6px;
+      &:after{
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 2px;
+        background: $red;
+        bottom: 0;
+      }
+    }
+  }
+  .price-comparison-time-box{
+    padding: 30px 5px;
+    color: $c33;
+    font-size: 14px;
+  }
+  .export-price-record{
+    width: 100%;
+    border: solid 1px $borderBottom;
+    margin-bottom: 20px;
+    .export-price-title{
+      width: 100%;
+      height: auto;
+      background: #F8F8F8;
+      border-bottom: solid 1px $borderBottom;
+      display: flex;
+      align-items: center;
+      padding:10px;
+      p{
+        flex: 1;
+        margin: 0;
+        color: $c66;
+      }
+      button{
+          width: 90px;
+          height: 30px;
+          padding: 4px;
+          font-size: 12px;
+        a{
+          color: #fff;
+        }
+      }
+    }
+
+    .export-price-th,.export-price-td{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-items: center;
+      background: #F8F8F8;
+      border-bottom: solid 1px $borderBottom;
+      height: 50px;
+      
+      div{
+        flex: 1;
+        color: $c33;
+        font-weight:bold;
+        height: 100%;
+        overflow: hidden;
+        line-height: 50px;
+        text-align: center;
+        padding: 0 8px;
+        border-right: solid 1px $borderBottom;
+        &:nth-child(1){
+          flex: 3;
+        }
+        &:nth-child(2){
+          flex: 2;
+        }
+        &:nth-child(3){
+          flex: 2;
+        }
+        &:last-child{
+          border-right: none;
+        }
+      }
+    }
+    .export-price-td{
+      background: $fff;
+      height: 70px;
+      div{
+        font-size: 12px;
+        color: $c66;
+        line-height: 20px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding:0 8px;
+        p{
+          margin: 0;
+          font-weight: normal;
+          text-align: center;
+          flex: 1;
+        }
+        &:first-child{
+          p{
+            text-align: left;
+          }
+        }
+        &:nth-child(4){
+          color: $red;
+        }
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+}

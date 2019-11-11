@@ -1,0 +1,56 @@
+@import "./../../colorConfig";
+.switch-adds-modal{
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  .switch-adds-list{
+    width: 100%;
+    padding: 15px;
+    border: solid 1px $borderBottom;
+    margin-bottom: 20px;
+    div{
+      display: flex;
+      width: 100%;
+      font-size: 14px;
+      color: $c66;
+      span{
+        width: 80px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      p{
+        flex: 1;
+        margin: 0;
+      }
+      a{
+        display: none;
+      }
+      b{
+        display: block;
+        padding: 5px;
+        background: #D6D6D6;
+        color: $fff;
+        height: 20px;
+        line-height: 10px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+    &:hover{
+      border: solid 1px $red;
+    }
+  }
+  .switch-adds-list-active{
+    border: solid 1px $red;
+    position: relative;
+  }
+  .switch-adds-list-active:after{
+    content: "";
+    width: 25px;
+    height: 16px;
+    background: url(./../../image/img_checked.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

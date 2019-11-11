@@ -1,0 +1,35 @@
+@import "./../../colorConfig";
+.null-shopping-box{
+  width: 1200px;
+  background: $fff;
+  height: 496px;
+  margin-bottom: 50px;
+  padding-top: 150px;
+  img{
+    width: 137px;
+    height: 102px;
+    display: block;
+    margin:0 auto 26px;
+  }
+  p{
+    color: $c99;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  a{
+    display: block;
+    width: 90px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    border:solid 1px $red;
+    color: $red;
+    font-size: 12px;
+    border-radius: 50px;
+    margin: auto;
+    &:hover{
+      color: $red;
+    }
+  }
+}

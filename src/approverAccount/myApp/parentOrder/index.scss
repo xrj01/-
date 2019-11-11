@@ -1,0 +1,392 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../../colorConfig.scss";
+.appParentOrder-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:#F6F5F5;
+    
+    .appParentOrder-container-title{
+        height: 178px;
+        background-color: $fff;
+        padding-left: 65px;
+        padding-top: 34px;
+        margin-bottom: 15px;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        .appParentOrder-container-title-img{
+            text-align: center;
+            .mt5{
+                margin-top: 5px;
+            }
+        }
+        .mr60{
+            margin-right: 27px;
+            margin-top: 30px;
+        }
+        .mt20{
+            margin-top: 20px;
+        }
+        .width105{
+            width: 105px;
+        }
+        .ft16{
+            font-size: 16px;
+            color: #333;
+        }
+        .appParentOrder-number{
+            margin-top: 30px;
+            :nth-child(1){
+                font-size: 16px;
+                color: #333;
+                font-weight: bold;
+            }
+            :nth-child(2){
+                font-size: 14px;
+                color: #666;
+            }
+        }
+        .appParentOrder-btn-box{
+            margin-right: 33px;
+            display: flex;
+            flex-direction: column;
+            div{
+                cursor: pointer;
+            }
+            :nth-child(2){
+                margin: 20px 0;
+                color: #D01D00;
+                text-align: center;
+            }
+            :nth-child(3){
+                color: #2277E7;
+                text-align: center;
+            }
+            :nth-child(1):hover{
+                color: #999;
+            }
+            :nth-child(2):hover{
+                color: #fd2603;
+            }
+            :nth-child(3):hover{
+                color: #5aa1fe;
+            }
+        }
+    }
+    .appParentOrder-container-content{
+        background-color: $fff;
+        padding: 30px 15px 49px;
+        .appParentOrder-dismiss-reason{
+            margin-bottom: 30px;
+            :nth-child(1){
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 14px;
+            }
+            :nth-child(2){
+                font-size: 14px;
+                color: #666;
+                width:945px;
+                height:100px;
+                padding: 10px 15px;
+                border: 1px solid #ECECEC;
+            }
+        }
+        .appParentOrder-container-header{
+            height: 46px;
+            background-color: #F2F2F2;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            div{
+                width: 188px;
+            }
+            :nth-child(1){
+                width: 388px;
+            }
+        }
+        .appParentOrder-product-box{
+            margin-top: 20px;
+            border: 1px solid #eee;
+            margin-bottom: 30px;
+            .appParentOrder-product-title{
+                height:46px;
+                background-color: #EEEEEE;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center;
+                .appParentOrder-product-title-left{
+                    display: flex;
+                    flex-direction: row;
+                    div{
+                        margin-right: 30px;
+                        span{
+                            font-size: 14px;
+                            color: #333;
+                        }
+                    }
+                }
+                .appParentOrder-product-title-right{
+                    margin-right: 15px;
+                    color: #333;
+                }
+            }
+            .appParentOrder-product-content{
+                height: 120px;
+                display: flex;
+                flex-direction: row;
+                a{
+                    color: #666666;
+                    font-size: 12px;
+                }
+                a:hover{
+                    color: #2277E6;
+                }
+                .appParentOrder-product-content-details{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    //justify-content: center;
+                    width: 388px;
+                    height: 120px;
+                    .appParentOrder-product-content-img{
+                        width: 90px;
+                        height: 90px;
+                        margin: 0 19px 0 15px;
+                    }
+                }
+            }
+            .appParentOrder-product-footer{
+                min-height: 40px;
+                //line-height: 40px;
+                padding: 8px 15px;
+                //padding-left: 15px;
+                
+                border-top: 1px solid #eee;
+                :nth-child(1){
+                    font-size: 12px;
+                    color: #333;
+                }
+                :nth-child(2){
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+        }
+        .appParentOrder-container-info{
+            border: 1px solid #ECECEC;
+            min-height: 210px;
+            padding-top: 22px;
+            display: flex;
+            flex-direction: row;
+            //justify-content: space-between;
+            p{
+                font-size: 12px;
+                color: #666;
+                line-height: 25px;
+                word-wrap: break-word;
+                word-break: break-all;
+                overflow: hidden;
+            }
+            .appParentOrder-info-consignee{
+                width: 220px;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                //height: 160px;
+                border-right: 1px solid #ECECEC;
+                padding-right: 18px;
+            }
+            .appParentOrder-info-invoice{
+                margin-left: 25px;
+                padding-right: 18px;
+            }
+        }
+        .appParentOrder-container-payment{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 50px;
+            div{
+                display: flex;
+                flex-direction: row;
+                font-size: 14px;
+                color: #666;
+                line-height: 26px;
+                span{
+                    display: block;
+                    min-width: 86px;
+                    color: #333;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+    
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .width188{
+        width: 188px;
+        height: 120px;
+        font-size: 14px;
+        color: #666;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        
+
+        border-left: 1px solid #eee;
+        //border-right: 1px solid #eee;
+        
+    }
+    .width150{
+        width: 150px !important;
+    }
+    .width120{
+        width: 120px !important;
+    }
+    .width141{
+        width: 141px !important;
+    }
+    .ft14{
+        font-size: 14px;
+        color: #333;
+    }
+    .ft12{
+        font-size: 12px;
+    }
+    .color66{
+        color: #666;
+    }
+    .color89{
+        color: #898888;
+    }
+    .red{
+        color:#D01D00 !important;
+        cursor: pointer;
+    }
+    .blue{
+        color: #2277E6 !important;
+        cursor: pointer;
+    }
+    .ft18{
+        font-size: 18px;
+        font-weight:bold;
+        color:#D01D00 !important;
+    }
+    .ml15{
+        margin-left: 15px;
+    }
+    .mr14{
+        margin-right: 14px;
+    }
+    .mr20{
+        margin-right: 20px;
+    }
+    .mt15{
+        margin-top: 15px;
+    }
+    .mb20{
+        margin-bottom: 12px;
+    }
+    .appParentOrder-accessory{
+        font-size: 14px;
+        color: #333;
+        margin: 30px 0 15px;
+    }
+    .appParentOrder-order-file-list{
+      border: solid 1px $borderBottom;
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      .file-list{
+        width: 49%;
+        margin-right: 15px;
+        display: flex;
+        padding: 10px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px $borderBottom;
+        margin-bottom: 15px;
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+        .file-list-img{
+            width: 64px;
+            height: 64px;
+            border-radius: 4px;
+            margin-right: 10px;
+            text-align: center;
+            background: url("./../../../image/img_wj.png") no-repeat center center;
+            background-size: 80% 80%;
+            span{
+              display: inline-block;
+              background: $fff;
+            }
+            img{
+              height: 64px;
+            }
+            .word{
+              color: #1890FF;
+            }
+            .xlsx{
+              color: #00A000;
+            }
+            .ppt,.pdf{
+              color: #D01D00;
+            }
+            i{
+              font-size: 60px;
+            }
+          }
+          p{
+            flex: 1;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+            color: $c66;
+            font-size: 12px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+      }
+    }
+    
+}
+.ant-popover-inner-content{
+    p{
+        margin-bottom: 5px;
+    }
+}
+.myApp-appParentOrder-btn{
+    /* width: 90px;
+    height: 36px !important;
+    border: 1px solid #2277E7 !important;
+    span{
+        font-size: 14px !important;
+        color: #2277E7 !important;
+        font-weight: normal !important;
+        margin-bottom: 3px;
+    } */
+    
+}
+.myApp-appParentOrder-btn:hover{
+    /* background-color: #2277E7 !important;
+    span{
+        color: #fff !important;
+    } */
+    
+}

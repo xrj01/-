@@ -1,0 +1,37 @@
+@import "./../../../colorConfig";
+.edit-password-content{
+//   width: 340px;
+//   margin: auto;
+ width: 100%;
+  p{
+    color: $c66;
+    font-size: 14px;
+    margin: 0;
+  }
+  &>div{
+    margin-bottom: 25px;
+    padding-left: 16px;
+  }
+  span{
+      display: inline-block;
+      width: 70px;
+      text-align: right;
+      line-height: 40px;
+  }
+  
+  input{
+    width: 370px;
+    height: 40px;
+    line-height: 40px;
+    
+    &:hover,&:focus,&:active{
+      border-color: $red;
+      box-shadow:0 0 0 2px rgba(208,29,0,.2)
+    }
+  }
+}
+.modal-edit-pwd{
+    .ant-modal-footer{
+        padding-right: 40px !important;
+    }
+}

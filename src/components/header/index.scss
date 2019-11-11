@@ -1,0 +1,236 @@
+$blue : #006ce2 ;
+$red : #D01D00;
+$fff : #fff;
+$e99 : #999;
+$imgBorder : #888;
+$a : #666;
+$eee:#eee;
+header{
+  width: 100%;
+  height: 160px;
+  background: $fff;
+  .header-nav-box{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background: $eee;
+    .header-nav{
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      font-size: 14px;
+      .header-position{
+        width: 35%;
+        color: $e99;
+        i{
+          color: $red;
+          vertical-align: sub;
+          margin-top: -2px;
+          font-size: 20px;
+        }
+      }
+      .header-nav-list{
+        flex: 1;
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+        font-size: 12px;
+        .header-nav-content{
+          min-width: 100px;
+          padding: 0 10px;
+          line-height: 38px;
+          height: 38px;
+          position: relative;
+          text-align: center;
+          color: $e99;
+          .header-nav-secondary{
+            width: 100%;
+            background: $fff;
+            position: absolute;
+            left: 0;
+            top: 33px;
+            z-index: 999;
+            display: none;
+            a,span{
+              display: block;
+              height: 42px;
+              text-align: center;
+              line-height: 42px;
+              cursor: pointer;
+              color: $e99;
+              &:hover{
+                color: $red;
+              }
+            }
+            
+          }
+          i{
+            display: inline-block;
+            transition: .2s all;
+            transform: rotate(180deg);
+          }
+          &:hover{
+            background: $fff;
+            color: $red;
+            >a{
+              color: $red;
+            }
+            i{
+              transform: rotate(0deg);
+            }
+            .header-nav-secondary{
+              display: block;
+            }
+          }
+        }
+      }
+      a{
+        color: $e99;
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+  }
+  .header-box{
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    .go-an-mall{
+        width: 830px;
+        text-align: right;
+        a{
+            color: $red;
+        }
+        font-size: 16px;
+    } 
+    .logo-th{
+      width: 100px;
+      height: 62px;
+      margin-right: 128px;
+      //background: url(./../../image/logotonghao.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .logo-company{
+        margin-right: 10px;
+    }
+    .logo-box{
+      width: 192px;
+      height: 64px;
+      margin-right: 40px;
+        
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url(./../../image/NEW_LOGO.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .is-user-box{
+      flex: 1;
+      margin-right: 200px;
+      a{
+        font-size: 16px;
+        color: $a;
+        padding: 0 10px;
+        position: relative;
+        display: inline-block;
+        &:hover:after{
+          content: "";
+          position: absolute;
+          display: block;
+          left: 10%;
+          bottom: 0;
+          width: 80%;
+          height: 2px;
+          background: $red;
+        }
+      }
+    }
+    .header-search-box{
+      width: 570px;
+      .btn-box{
+        input{
+          border:solid 2px $red;
+          outline:none;
+          font-size: 15px;
+          &:focus{
+            outline:none;
+            box-shadow:none
+          }
+          &:active{
+            outline:none;
+          }
+        }
+        button{
+          background: $red;
+          border:solid 1px $red;
+          border-radius: 0;
+          font-size: 15px;
+        }
+      }
+      p{
+        margin: 0;
+        a{
+          color: $a;
+          margin-right: 8px;
+          &:hover{
+            color: $red;
+          }
+        }
+      }
+    }
+    .header-shopping-box{
+      width: 150px;
+      height: 40px;
+      position: relative;
+      border:1px solid #DDDDDD;
+      margin-left: 30px;
+      overflow: hidden;
+      a{
+        display: flex;
+        color:#666666;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        background: $fff;
+        i{
+          font-size: 20px;
+        }
+        p{
+          margin: 0;
+          font-size: 15px;
+        }
+        span{
+          display: block;
+          vertical-align: middle;
+          position: absolute;
+          right: 2px;
+          top: 2px;
+          padding:0 5px;
+          background: $red;
+          text-align: center;
+          color:$fff;
+          font-size: 12px;
+          border-radius: 50px;
+          height: 18px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  .header-box-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    background: $fff;
+    z-index: 9999;
+    padding: 10px 353px 10px 353px;
+    box-shadow: 0 2px 4px #ebebeb;
+  }
+}

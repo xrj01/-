@@ -1,0 +1,43 @@
+@import "../colorConfig";
+.searchList_box{
+  background-color:$f6f!important;
+  .page_{
+    margin-top: 50px;
+  }
+  .body_box{
+    background-color: #FFFFFF;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search-list-box{
+    width: 1200px;
+    margin: auto;
+  }
+  .search-pagination-box{
+    text-align: center;
+    padding:10px 0 20px;
+    .ant-pagination-item:focus, .ant-pagination-item:hover{
+      border-color: $red;
+      a{
+        color: $red;
+      }
+    }
+    .ant-pagination-prev:focus .ant-pagination-item-link, .ant-pagination-next:focus .ant-pagination-item-link, .ant-pagination-prev:hover .ant-pagination-item-link, .ant-pagination-next:hover .ant-pagination-item-link{
+      border-color: $red;
+      color: $red;
+    }
+    .ant-pagination-disabled .ant-pagination-item-link:hover{
+        color: rgba(0, 0, 0, 0.25);
+        border-color: #d9d9d9;
+        cursor: not-allowed;
+    }
+    .ant-pagination-item-active{
+      border-color: $red;
+      a{
+        color: $red;
+      }
+    }
+  }
+}
+

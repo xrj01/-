@@ -1,0 +1,100 @@
+$red:#D20602;
+$fff:#fff;
+@import "./../../colorConfig";
+.contrast-modal-box{
+  z-index: 1000;
+  width: 300px;
+  border:solid 1px #eee;
+  box-shadow: 0 0 1px 1px #eee;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  background: #fff;
+  transition: all .5s;
+  .contrast-modal-title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    background: $red;
+    color: $fff;
+    padding: 0 10px;
+    p{
+      flex: 1;
+      margin: 0;
+    }
+    i{
+      font-size: 20px;
+    }
+  }
+  ul{
+    width: 100%;
+    li{
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border: solid 1px $fff;
+      border-bottom: solid 1px #eee;
+      i{
+        color: $c33;
+        font-size: 16px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        //display: none;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .contrast-goods-introduce{
+        flex: 1;
+        max-width: 80%;
+        p{
+          margin: 0;
+          width: 95%;
+          font-size: 13px;
+          a{
+            color: #333;
+          }
+          span{
+            color: $red;
+            font-size: 16px;
+          }
+        }
+      }
+      &:hover{
+        border: dashed 1px $red;
+        /*i{
+          display: block;
+        }*/
+      }
+    }
+  }
+  .contrast-modal-footer{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    button{
+      flex: 1;
+      margin: 0 15px;
+    }
+    .ant-btn{
+      border:solid 1px rgba(0,0,0,0.3);
+      color: rgba(0,0,0,0.3);
+    }
+    .ant-btn:hover{
+      border:solid 1px #D01D00;
+      color: #D01D00;
+    }
+    .ant-btn-primary{
+      background: #D01D00;
+      border:solid 1px #D01D00;
+      color: #fff !important;
+    }
+  }
+}

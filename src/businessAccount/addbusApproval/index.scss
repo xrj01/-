@@ -1,0 +1,113 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busApproval-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busApproval-container{
+        min-height: 644px;
+        margin: 0 15px;
+        
+    }
+    .busApproval-form{
+        margin-top: 40px;
+        margin-left: 0px;
+        input{
+            width: 508px;
+            height: 40px;
+            border-radius: 4px;
+        }
+        .ant-select-selection--single{
+            height: 40px;
+        }
+        .ant-select-selection__rendered{
+            line-height: 40px;
+        } 
+        .approve-btn{
+            button{
+                width: 150px;
+                margin-right: 36px;
+            }
+            
+        }
+        .mr36{
+            margin-right: 36px;
+            width: 150px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .approve-table{
+            display: flex;
+            flex-direction: row;
+            margin-left: 49px;
+            .color333{
+                color: #333;
+            }
+            .approve-table-addbtn{
+                width: 508px;
+                height: 40px;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 14px;
+                //font-weight:bold;
+                border: 1px solid #2277E6;
+                color: #2277E6;
+            }
+        }
+        .approve-btn-box{
+            margin-top: 40px;
+            margin-bottom: 0;
+            padding-bottom: 60px;
+            .approve-backbtn{
+                width:150px;
+                height:40px;
+                margin-right: 32px;
+                background-color: #F0F0F0;
+                color: #999999;
+                font-size:16px;
+            }
+            .approve-savebtn{
+                width: 150px;
+                height: 40px;
+                background-color: #1890ff;
+                color: #fff;
+                font-size: 16px;
+    
+            }
+        }
+        
+    }
+    .active{
+        background-color: #2277E6!important;
+        color: #fff!important;
+    }
+    
+}
+.approve-add-model{
+    .ant-modal-header{
+        //border-bottom: none;
+        //padding-top: 40px;
+    }
+    .ant-modal-title{
+        color: #333;
+        //text-align: center;
+        font-size:16px;
+        //font-weight:bold;
+    }
+    .ant-modal-footer{
+        border-top: none;
+        text-align: right;
+        padding: 0 40px 40px 0;
+        .ant-btn-primary{
+            margin-left: 10px;
+        }
+    }
+    .ant-modal-body{
+        max-height: 600px;
+        padding: 40px;
+        overflow:auto;
+    }
+}

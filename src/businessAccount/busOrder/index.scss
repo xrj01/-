@@ -1,0 +1,96 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busOrder-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busOrder-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .busOrder-table-box{
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+                padding: 16px 13px;
+            }
+        }
+        .table-check-order{
+            a{
+                color: #666666;
+            }
+            
+        }
+        .table-check-order:hover{
+            a{
+                color: #2277E6;
+            }
+           
+        }
+        .busOrder-nav{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .busOrder-nav-input{
+                display: flex;
+                flex-direction: row;
+                /* input{
+                    height: 35px;
+                } */
+                .marginR{
+                    margin-right: 10px;
+                    .ant-input{
+                        border-radius: 0;
+                    }
+                }
+                .width-176{
+                    width: 176px;
+                    //border-radius: 4px;
+                }
+                .width-152{
+                    width: 152px;
+                    //border-radius: 4px;
+                }
+                .width-168{
+                    width: 168px;
+                    .ant-select-selection{
+                        border-radius: 0px;
+                    }
+                }
+                .width-100{
+                    width: 100px;
+                    .ant-select-selection{
+                        border-radius: 0px;
+                    }
+                }
+                /* .ant-select-selection{
+                    border-radius: 0;
+                } */
+            }
+            .busOrder-nav-btn{
+                button{
+                    width: 71px;
+                    margin-left: 20px;
+                }
+                
+            }
+            
+        }
+        .icondingdanguanli{
+            margin-right: 10px;
+            font-size: 23px;
+            color: #2277E6;
+        }
+        .mt20{
+            margin-top: 7px;
+        }
+        .class-pagination-box{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+    }
+    
+}

@@ -1,0 +1,117 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.project-main-box{
+    width:975px;
+    //height: 800px;
+    min-height: 644px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .project-main-container{
+        min-height: 100%;
+        margin: 0 15px;
+        .project-search-box{
+            padding: 25px 0;
+            //padding-left: 19px;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .project-search-input{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                font-size: 14px;
+                line-height: 30px;
+                .input-box{
+                    input{
+                        border-radius: 0px;
+                    }
+                    .name{
+                        width: 230px;
+                    }
+                    .manager{
+                        width: 122px;
+                    }
+                    .data{
+                        width: 230px;
+                        .ant-input{
+                            border-radius: 0px !important;
+                        }
+                        
+                    }
+                    margin-right: 10px;
+                }
+            }
+            .project-search-btn{
+                button{
+                    width: 70px;
+                    height: 32px;
+                    border-radius: 4px;
+                    margin-left: 10px;
+                    margin-right: 14px;
+                }
+                button:first-child{
+                    margin-left: 0  ;
+                }
+            }
+        }
+        .table-title{
+            color: #333;
+            margin-top: 0;
+        }
+        .table-box{
+            .operation{
+                span{
+                    margin-right: 10px;
+                    color: $B2277E6;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .project-page{
+        /* position: relative;
+        text-align: center;
+        margin: -60px auto 0; */
+        // padding-top: 40px;
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        .ant-pagination-item-link{
+            padding: 0 10px;
+        }
+    }
+}
+// 项目弹窗
+.project-edit-model{
+    .ant-modal-header{
+        //border-bottom: none;
+        padding: 20px;
+    }
+    .ant-modal-title{
+        //text-align: center;
+        font-size:16px;
+        //font-weight: bold;
+        color: #333;
+        //margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 0px 0px 40px;
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 16px 0px 40px 0px;
+        :nth-child(2){
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+    }
+    .busDepartment-edit-btn{
+        /* text-align: left;
+        margin-left: 117px; */
+        text-align: right;
+    }
+}

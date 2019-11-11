@@ -1,0 +1,44 @@
+@import "./../../colorConfig";
+.shopping-modal{
+    .ant-modal-body{
+        padding: 24px 40px;
+    }
+  .shopping-modal-box{
+    width: 100%;
+    p{
+      margin-top: 20px;
+      margin-bottom: 30px;
+      color: $c33;
+      font-size: 16px;
+      i{
+        color: $red;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .ant-modal-footer{
+      border-top: 0;
+      padding-right: 40px;
+  }
+  .ant-btn:hover{
+    border:solid 1px #D01D00;
+    color: #D01D00;
+    background: $red;
+  }
+  .ant-btn:active{
+    border:solid 1px #D01D00;
+    color: #D01D00;
+    background: $red;
+  }
+  .ant-btn-primary{
+    background: #D01D00;
+    border:solid 1px #D01D00;
+    color: #fff !important;
+  }
+  .ant-btn-primary:active,.ant-btn-primary:focus{
+    border:solid 1px #D01D00;
+    color: #D01D00;
+    background: $red;
+  }
+}

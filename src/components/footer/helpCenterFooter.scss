@@ -1,0 +1,80 @@
+$e5:#E5E5E5;
+$d3:#D32E26;
+$f6:#666666;
+.helpCenterFooter-box{
+    height:120px;
+    background: $e5;
+    //页脚导航
+    .helpCenterFooter-top{
+        .helpCenterFooter-container{
+            width: 1200px;
+            height:120px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: space-between;
+            align-items: center;
+            .helpCenterFooter-container-box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .helpCenterFooter-img{
+                    width:50px;
+                    height:50px;
+                    border:2px solid $d3;
+                    border-radius:15px;
+                }
+                .helpCenterFooter-ft20{
+                    margin-left: 20px;
+                    font-size:20px;
+                    color: $f6;
+                }
+            }
+        }
+    }
+    //页脚内容
+    .helpCenterFooter-content{
+        width: 1200px;
+        margin: 0 auto;
+        .helpCenterFooter-content-container{
+            margin-top: 80px;
+            margin-bottom: 83px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            p{
+                margin: 0;
+                font-size: 12px;
+                color: $f6;
+            }
+            .mt13{
+                margin-top: 13px;
+            }
+            .helpCenterFooter-content-left{
+                .helpCenterFooter-content-list{
+                    margin-bottom: 35px;
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        a{
+                            border-left: 1px solid $f6;
+                            padding: 0 16px;
+                            font-size:16px;
+                            color: $f6;
+                        }
+                        .border-none{
+                            border: none;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .helpCenterFooter-content-img{
+            width:100px;
+            height:100px;
+            border:1px solid $d3;
+        }
+    }
+}

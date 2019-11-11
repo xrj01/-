@@ -1,0 +1,19 @@
+@import "../../colorConfig";
+.searchList_body{
+  background: $fff;
+  .search-list-box{
+    width: 1200px;
+    margin: auto;
+    background: $fff;
+  }
+  .supplies-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 11px;
+    li{
+      min-width: 272px;
+      max-width: 272px;
+      margin: 11px;
+    }
+  }
+}

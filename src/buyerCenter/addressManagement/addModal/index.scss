@@ -1,0 +1,48 @@
+@import "./../../../colorConfig";
+.user-add-modal-boxs{
+  width: 100%;
+  .ant-row{
+    line-height: 30px;
+    // margin-bottom: 20px;
+  }
+  .nested-from{
+    // .ant-row{
+      margin-bottom: 0;
+    // }
+  }
+  .ant-col-4{
+    text-align: right;
+    padding-right: 20px;
+    span{
+      color: $red;
+    }
+  }
+  input{
+    border-radius: 4px;
+    &:hover,&:active,&:focus{
+      border-color: $red;
+    }
+    &:focus{
+      box-shadow: 0 0 0 2px rgba(208,29,0,0.3);
+    }
+  }
+  textarea{
+    &:hover,&:active,&:focus{
+      border-color: $red;
+    }
+    &:focus{
+      box-shadow: 0 0 0 2px rgba(208,29,0,0.3);
+    }
+  }
+  .ant-select-selection:hover,.ant-select-selection:active,.ant-select-selection:focus{
+    border-color: $red;
+  }
+  .ant-select-selection:focus{
+    box-shadow: 0 0 0 2px rgba(208,29,0,0.3);
+  }
+}
+/* .noMargin{
+    .ant-row{
+        margin-bottom: 24px;
+      }
+} */

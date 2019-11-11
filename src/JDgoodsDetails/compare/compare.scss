@@ -1,0 +1,142 @@
+@import "../../colorConfig";
+
+.commodity{
+  margin-top: 20px;
+  .title{
+    width: 57px;
+    height: 15px;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+  }
+  .compare_title_box{
+    background-color:$EEE;
+    height: 50px;
+    line-height: 51px;
+    font-weight: 600;
+
+  }
+}
+
+.compare_table{
+  background-color: #fff;
+  .td1,.td2,.td3,.td4,.td5,.td6,.td7,.td8,.td9{
+    padding: 0;
+    border: 1px $f3f solid;
+    text-align: center;
+  }
+  .td1{
+    width: 120px;
+    height: 50px;
+    padding: 0;
+  }
+  .td2{
+    width: 228px;
+    height: 50px;
+
+  }
+  .td3{
+    width: 128px;
+    height: 50px;
+  }
+  .td4{
+    width: 200px;
+    height: 50px;
+  }
+  .td5{
+    width: 94px;
+    height: 50px;
+  }
+  .td6{
+    width: 80px;
+    height: 50px;
+  }
+  .td7{
+    width: 80px;
+    height: 50px;
+  }
+  .td8{
+    width: 138px;
+    height: 50px;
+  }
+  .td9{
+    width: 100px;
+    height: 50px;
+  }
+  .ant-table-row .td1,.td2,.td3,.td4,.td5,.td6,.td7,.td8,.td9{
+    height: 48px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+  .td6 div button{
+    width: 50px;
+    height: 28px;
+    background-color: rgba(0,0,0,0);
+    border: 2px $f3f solid;
+    border-radius: 3px;
+  }
+  .td6 div button:hover{
+    border: 2px $red solid;
+  }
+  .td6 div button:active{
+    background-color: $red;
+    color: #FFFFFF;
+    outline:none;
+  }
+  .td8 div button{
+    width: 30px;
+    height: 28px;
+    background-color: rgba(0,0,0,0);
+    border: 2px $f3f solid;
+    display: inline-block;
+  }
+  .td8 div .num{
+    width: 30px;
+    height: 28px;
+    background-color: rgba(0,0,0,0);
+    border: 1px $f3f solid;
+    display: inline-block;
+    margin-top: -5px;
+    padding-top: 3px;
+    border-left: none;
+    border-right: none;
+
+  }
+  .td8 div button:hover{
+    border: 2px $red solid;
+  }
+  .td8 div button:active{
+    background-color: $red;
+    color: #FFFFFF;
+    outline:none;
+  }
+  .td9  button{
+    width: 69px;
+    height: 28px;
+    background-color: rgba(0,0,0,0);
+    border: 2px $f3f solid;
+    display: inline-block;
+    margin-top: -5px;
+    padding-top: 3px;
+    font-size: 12px;
+    border-radius: 3px;
+
+  }
+  .td9 button:hover{
+    border: 2px $red solid;
+  }
+  .td9 button:active{
+    background-color: $red;
+    color: #FFFFFF;
+    outline:none;
+  }
+
+
+}
+//.compare_table tr th:nth-child(1) {
+//  width: 20px!important;
+//  color: red;
+//}

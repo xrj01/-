@@ -1,0 +1,38 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.thatTemplate-box{
+    width:975px;
+    min-height: 480px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .thatTemplate-container{
+        padding-bottom: 60px;
+        margin: 0 40px;
+        .thatTemplate-title{
+            font-size:18px;
+            color: $c66;
+            border-bottom: 1px solid $e8e;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        .thatTemplate-content-box{
+            margin: 30px 0 20px 0;
+            .thatTemplate-content-title{
+                font-size:14px;
+                font-weight:bold;
+                line-height:30px;
+                color: $c66;
+            }
+            .thatTemplate-content-character{
+                font-size:14px;
+                line-height:30px;
+                text-align: justify;
+                color: $c66;
+            }
+        }
+    }
+    
+}

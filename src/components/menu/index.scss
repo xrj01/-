@@ -1,0 +1,56 @@
+.menuList{
+  position: relative;
+  display: flex;
+  flex-flow: column  nowrap;
+  li{
+    padding-left: 10px;
+    height: 60px;
+    width: 210px;
+    background-color: #29282E;
+    cursor: pointer;
+    .itemTitle{
+      height: 30px;
+      line-height: 30px;
+      margin-left: 0px;
+      transition: all 0.5s;
+      -moz-transition: all 0.5s; /* Firefox 4 */
+      -webkit-transition: all 0.5s; /* Safari 和 Chrome */
+      -o-transition: all 0.5s; /* Opera */
+    }
+    .itemRow{
+      height: 30px;
+      line-height: 30px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      a{
+        color: #818181 !important;
+      }
+    }
+    &>a{
+      color: #fff;
+    }
+    &:hover{
+      background-color: #fff;
+      .itemTitle{
+        margin-left: 10px;
+        a{
+          color: #333;
+        }
+      }
+    }
+    .subMenuBox{
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 210px;
+      background-color: rgba(255, 255, 255, 0.98);
+      border: 1px solid #999;
+      width: 500px;
+      min-height: 500px;
+      z-index: 999;
+    }
+    .show{
+      display: block;
+    }
+  }
+}

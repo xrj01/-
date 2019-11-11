@@ -1,0 +1,288 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busUser-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busUser-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .busDepartment-table-padding{
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+                padding: 16px 12px !important;
+            }
+        }
+        .busUser-nav{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .busUser-nav-input{
+                display: flex;
+                flex-direction: row;
+                .marginR{
+                    margin-right: 10px;
+                }
+                .width-176{
+                    width: 176px;
+                }
+                input{
+                    border-radius: 0px;
+                }
+                .ant-select-selection,.ant-input{
+                    border-radius: 0;
+                }
+            }
+            .busUser-nav-btn{
+                button{
+                    width: 71px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        
+    }
+    .iconyonghu{
+        margin-right: 10px;
+        font-size: 22px;
+        color: #2277E6;
+    }
+    .mt10{
+        margin-top: 7px !important;
+    }
+     
+}
+// 查看弹窗
+.busUser-check-model{
+    .ant-modal-header{
+        //border-bottom: none;
+        padding: 20px;
+    }
+    .ant-modal-title{
+        //text-align: center;
+        font-size:16px;
+        //font-weight: bold;
+        color: #333;
+        //margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 80px 10px 40px;
+        div{
+            font-size:14px;
+            color: #333;
+            margin-bottom: 35px;
+            span{
+                color: #999999;
+            }
+        }
+        .busUser-user-info{
+            //background-color: #EEF5FF;
+            //border: 1px solid #e8e8e8;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+            height: 40px;
+            line-height: 40px;
+            //padding-left: 10px;
+        }
+        .busUser-user-content{
+            border: 1px solid #ccc;
+            height: 200px;
+        }
+        .busUser-check-content{
+            width:480px;
+            height:200px;
+            overflow: auto;
+            border: 1px solid #ddd;
+        }
+    }
+}  
+// 编辑弹窗
+.busUser-edit-model{
+    
+    .ant-modal-header{
+        //border-bottom: none;
+        padding: 20px;
+    }
+    .ant-modal-title{
+        //text-align: center;
+        font-size:16px;
+        //font-weight: bold;
+        color: #333;
+        //margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 0px 0px 34px;
+        max-height: 590px;
+        overflow: auto;
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 16px 0px 40px 0px;
+        text-align: right;
+        :nth-child(2){
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+
+    }
+    .busUser-edit-btn{
+        /* text-align: left;
+        margin-left: 175px; */
+        //text-align: center;
+        margin-top: 24px;
+        :nth-child(2){
+            margin-right: 44px;
+        }
+    }
+}
+
+// 开启、关闭弹窗
+.busUser-open-model{
+    .ant-modal-header{
+        border-bottom: none;
+        padding: 20px 24px 0 24px;
+    }
+    .ant-modal-title{
+        text-align: center;
+        font-size:18px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 40px 0px 40px;
+        div{
+            //text-align: center;
+            color: #333;
+            //margin-left: 40px;
+            font-size: 16px;
+        }
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 40px 0px 40px 0px;
+        text-align: right;
+        :nth-child(2){
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+    }
+    .busUser-open-btn{
+        /* text-align: left;
+        margin-left: 103px; */
+        //text-align: center;
+    }
+}
+
+//新建账户弹窗
+.busUser-create-model{
+    .ant-modal-header{
+        //border-bottom: none;
+        padding: 20px;
+    }
+    .ant-modal-title{
+        //text-align: center;
+        font-size:18px;
+        //font-weight: bold;
+        color: #333;
+        //margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 40px 0px 40px;
+        div{
+            text-align: center;
+            color: #333;
+            //margin-left: 8px;
+            font-size: 16px;
+        }
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 116px 0px 40px 0px;
+    }
+    .busUser-create-btn{
+        text-align: center;
+        //margin-left: 165px;
+    }
+    .busUser-create-content-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        button{
+            width: 130px;
+            height: 42px;
+        }
+    }
+}
+// 重置密码
+.resetPwd-modal{
+    .ant-modal-body{
+        padding: 40px !important;
+    }
+    .ant-btn{
+        margin-right: 10px;
+        width: 70px;
+        height: 32px;
+    }
+    .ant-btn-primary{
+        margin-right: 0; 
+    }
+    .ant-modal-confirm-btns{
+        //margin-bottom: 16px;
+        margin-top: 40px !important;
+        text-align: right;
+        .ant-btn-primary{
+            color: #fff !important;
+            background-color: #1980ff !important;
+            margin-left: 0px !important;
+            border: 1px solid #1980ff !important;
+            
+        }
+        .ant-btn:hover{
+            border: 1px solid #1980ff !important;
+            color: #666 !important;
+        }
+        .ant-btn-primary:hover{
+            border: 1px solid #1980ff !important;
+            color: #fff !important;
+        }
+        
+    }
+    .ant-modal-confirm-title{
+        font-size: 18px !important;
+        color: #333 !important;
+        font-weight: bold !important;
+    }
+    .ant-modal-confirm-content{
+        //margin-top: 16px !important;
+        font-size: 16px !important;
+        margin-top: 0px !important;
+        color: #333 !important;
+    }
+    .ant-modal-confirm-body{
+        .anticon-question-circle{
+            color: #1980ff !important;
+        }
+    }
+    .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+        margin-left: 0px;
+    }
+    
+}
+.ant-pagination-options-quick-jumper{
+    line-height: 0 !important;
+}
+.class-pagination-box{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    .pagination-btn{
+        margin-left: 16px;
+        vertical-align: middle;
+    }
+}

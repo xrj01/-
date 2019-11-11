@@ -1,0 +1,159 @@
+@import "./../../colorConfig";
+.user-center-box{
+  .user-center-general-box{
+    width: 100%;
+    height: 172px;
+    background: $fff;
+    padding: 26px;
+    display: flex;
+    justify-items: center;
+    .user-center-div{
+      flex: 1;
+      width: 0;
+      border-right: solid 1px $borderBottom;
+      padding-left: 75px;
+      p{
+        color: $c66;
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 30px;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        span{
+          color: $red;
+        }
+      }
+      &:first-child{
+        padding-left: 11px;
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+  .user-my-order-box{
+    width: 100%;
+    margin-top: 15px;
+    background: $fff;
+    .user-my-order-box-title{
+      padding: 15px 15px 10px 15px;
+    }
+    .user-my-order-title{
+      width: 100%;
+      height: 46px;
+      display: flex;
+      padding: 0 15px;
+      background: $fe;
+      align-items: center;
+      p{
+        color: $c33;
+        margin: 0;
+        font-size: 14px;
+        flex: 1;
+      }
+      a{
+        color: $red;
+        font-size: 12px;
+      }
+    }
+    .user-my-order-content{
+      width: 100%;
+      background: $fff;
+      padding: 15px;
+      .user-my-order-list-box{
+        width: 100%;
+        border:solid 1px $borderBottom;
+        margin-bottom: 15px;
+        .user-my-order-list-head{
+          width: 100%;
+          height: 60px;
+          background: $ec;
+          display: flex;
+          align-items: center;
+          padding: 0 15px;
+          h3{
+            flex: 2.5;
+            color: $c33;
+            font-size: 14px;
+            width: 0;
+            margin: 0;
+          }
+          .user-my-order-list-head-operation{
+            flex: 1;
+            width: 0;
+            text-align: right;
+            a{
+              font-size: 12px;
+              color: $c66;
+              &:hover{
+                color: $red;
+              }
+            }
+            .ant-btn{
+              font-size: 12px;
+              background: $ec;
+            }
+            .ant-btn:hover,.ant-btn:focus{
+              border: solid 1px $red !important;
+              color: $red !important;
+            }
+            .ant-btn-primary{
+              background: $red !important;
+              border: solid 1px $red !important;
+            }
+            .ant-btn-primary:hover,.ant-btn-primary:focus{
+              color: $fff !important;
+            }
+            p{
+              text-align: right;
+              color: $red;
+              font-size: 12px;
+              margin: 0;
+              i{
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+        .user-my-order-list-content{
+          width: 100%;
+          background: $fff;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          div{
+            flex: 1;
+            width: 0;
+            color: $c66;
+            font-size: 12px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-right: solid 1px $borderBottom;
+            &:last-child{
+              border: none;
+            }
+          }
+        }
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+    .browse-list-box{
+      width: 100%;
+      background: $fff;
+      padding: 15px;
+      ul{
+        display: flex;
+        li{
+          max-width: 229px;
+          min-width: 229px;
+        }
+      }
+    }
+  }
+}

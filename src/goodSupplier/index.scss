@@ -1,0 +1,56 @@
+@import "../colorConfig";
+.goodSupplier{
+  background-color: $f6f;
+  .body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .srach_input_box{
+    .srach_input{
+      //width: 260px;
+      height: 32px;
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+    .inputer_BG{
+      background-color: #fff;
+      height: 52px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .inputer{
+  width: 260px;
+    }
+    .inputerButton{
+      top: 2px;
+      margin-left: 20px;
+      border-radius: 2px;
+      border-color: $red;
+      color: #fff;
+      background-color: $red;
+    }
+    .inputerButton:active{
+      background-color: #b81a00;
+      transition: all .3s linear;
+    }
+  }
+  .page{
+    margin-top: 40px;
+    text-align: center;
+  }
+  //.srach_input i{
+  //  font-size: 18px;
+  //}
+  //.srach_input i:hover{
+  //  color: $red;
+  //}
+  .foot_box{
+    background-color: #fff;
+  }
+  .supplier_img_box{
+    background-image: url("../image/SupplierDetails/img_mrt.png");
+  }
+
+}

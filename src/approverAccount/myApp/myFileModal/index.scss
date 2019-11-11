@@ -1,0 +1,133 @@
+@import "./../../../colorConfig";
+.approval-modal-box{
+  width: 100%;
+//   border: solid 1px $borderBottom;
+  padding: 10px;
+  border-radius: 4px;
+  .approval-modal-noatt{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .approval-step{
+    p{
+      margin: 0;
+    }
+  }
+  .ant-steps-item-process .ant-steps-item-icon{
+    background: $red;
+    border-color: $red;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon{
+    border-color: $red;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon{
+    color: $red;
+  }
+  .ant-steps-item-finish > .ant-steps-item-tail::after{
+    background-color: $red;
+  }
+  a{
+    display: block;
+  }
+  .file-list-box{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px $borderBottom;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    .word{
+      color: #1890FF;
+    }
+    .xlsx{
+      color: #00A000;
+    }
+    .ppt,.pdf{
+      color: #D01D00;
+    }
+    i{
+      font-size: 60px;
+    }
+    >div{
+      width: 60px;
+      height: 60px;
+      margin-right: 5px;
+      background: url("./../../../image/img_wj.png") no-repeat center center !important;
+      background-size: 80% 80% !important;
+      text-align: center;
+      span{
+        background: $fff;
+        display: inline-block;
+      }
+    }
+    img{
+      height: 60px;
+    }
+    p{
+      flex: 1;
+      margin: 0;
+      width: 0;
+    }
+    a:hover{
+      color: #1890FF;
+    }
+  }
+}
+
+.accessory-model{
+  .ant-modal-header{
+      //border-bottom: none;
+      padding: 20px;
+  }
+  .ant-modal-title{
+      //text-align: center;
+      font-size:16px;
+      //font-weight: bold;
+      color: #333;
+      //margin-top: 20px;
+  }
+  .ant-modal-body{
+      padding: 40px;
+      div{
+          //text-align: center;
+          color: #333;
+          margin-left: 0px;
+          font-size: 14px;
+      }
+  }
+  .ant-modal-footer{
+      border-top: none;
+      padding: 0;
+      text-align: center;
+  }
+  .busUser-turn-btn{
+      /* text-align: left;
+      margin-left: 103px; */
+      text-align: center;
+  }
+  .appProcess-steps{
+    width: 480px !important;
+    padding: 15px !important;
+    height: 335px;
+    border: 1px solid #eee;
+    overflow: auto;
+    .ant-steps-item-content{
+      width: 400px !important;
+      
+    }
+    .ant-steps-item-title{
+      color: #333 !important;
+    }
+    .appProcess-steps-title{
+      font-size: 14px !important;
+    }
+    .appProcess-steps-activeTitle{
+      p{
+        font-size: 14px !important;
+        margin: 0;
+      }
+      
+    }
+  }
+}

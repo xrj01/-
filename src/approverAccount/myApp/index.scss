@@ -1,0 +1,154 @@
+@import "./../../colorConfig";
+.myApp-box{
+  width:975px;
+  margin-left: 15px;
+  margin-bottom: 47px;
+  background:$fff;
+  .myApp-container{
+      min-height: 644px;
+      margin: 0 15px;
+      padding-top: 10px;
+      .ant-tabs-bar{
+        margin-bottom: 0;
+      }
+      // 搜索
+      .myApp-nav{
+          margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .myApp-nav-input{
+              display: flex;
+              flex-direction: row;
+              /* input{
+                  height: 35px;
+              } */
+              .marginR{
+                  margin-right: 12px;
+                  .ant-select-selection{
+                    border-radius: 0;
+                  }
+                  .ant-input{
+                    border-radius: 0;
+                  }
+              }
+              .width-176{
+                  width: 150px;
+                  //border-radius: 4px;
+              }
+              .width-152{
+                  width: 152px;
+                  //border-radius: 4px;
+              }
+              .width-168{
+                  width: 168px;
+              }
+              .width-100{
+                  width: 100px;
+              }
+              /* .ant-select-selection{
+                  border-radius: 0;
+              } */
+          }
+          .myApp-nav-btn{
+              button{
+                  width: 71px;
+                  margin-left: 20px;
+              }
+              
+          }
+          
+      }
+      // 内容
+      .myApp-content{
+         margin-top: 25px;
+        .myApp-content-top{
+          background-color: #EEEEEE;
+          height: 100px;
+          padding: 17px 15px;
+          display: flex;
+          flex-direction: row;
+          .myApp-content-top-link{
+            font-size: 12px;
+            color: #666;
+            line-height: 23px;
+            cursor: pointer;
+            &>div:hover{
+              color: #2277E6;
+            }
+          }
+          button{
+            width: 80px;
+            height: 30px;
+            border: 1px solid #2277E6;
+            color: #2277E6;
+            background-color: #EEEEEE;
+            font-size: 12px;
+          }
+          button:hover{
+            background-color: #2277E6;
+            color: #fff;
+          }
+          .margin79{
+            margin-right: 79px;
+          }
+          .margin312{
+            margin-right: 312px;
+          }
+          .mt10{
+            margin-top: 10px;
+          }
+          .mt30{
+            margin-top: 25px;
+          }
+          .ft14{
+            font-size: 14px;
+            color: #333;
+          }
+        }
+        .myApp-content-footer{
+          height: 50px;
+          border: 1px solid #eee;
+          font-size: 14px;
+          color: #666;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          :nth-child(1){
+            width: 320px;
+            height: 50px;
+            border-right: 1px solid #eee;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            //justify-content: center;
+          }
+          :nth-child(2),:nth-child(3){
+            width: 150px;
+            height: 50px;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+          :nth-child(4){
+            width: 328px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .class-pagination-box{
+          text-align: center;
+          margin-top: 50px;
+          padding-bottom: 50px;
+      }
+      
+  }
+  
+}

@@ -1,0 +1,323 @@
+@import "./../colorConfig";
+.order-box{
+  width: 100%;
+  font-size: 14px;
+  .ant-radio-checked .ant-radio-inner{
+    border-color: $red !important;
+  }
+  .ant-radio-checked{
+    &:hover .ant-radio-inner,&:focus .ant-radio-inner,&:active .ant-radio-inner{
+      border-color: $red;
+    }
+  }
+
+  .ant-radio-inner::after{
+    background-color: $red;
+  }
+  .order-information-box{
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 42px;
+    >h5{
+      color: $c33;
+      font-size: 16px;
+      margin: 0;
+      line-height: 50px;
+    //   font-weight: 600;
+    }
+    .the-goods-adds-box{
+      width: 100%;
+      background: $fff;
+      padding: 20px 30px 0 20px;
+      border:solid 1px $borderBottom;
+      .the-goods-adds-head{
+        display: flex;
+        width: 100%;
+        border-bottom: dashed 1px $borderBottom;
+        p{
+          font-size: 16px;
+          color: $c33;
+          margin: 0;
+          flex: 1;
+        }
+        span{
+          color: #2277E6;
+          font-size: 12px;
+          padding-left: 20px;
+          cursor: pointer;
+          i{
+            font-size: 12px;
+          }
+        }
+      }
+
+      .the-goods-adds{
+        width: 100%;
+        p{
+          font-size: 14px;
+          color: $c66;
+          margin: 0;
+          line-height: 60px;
+        }
+        .the-goods-adds-list{
+          width: 100%;
+          line-height: 60px;
+          >span{
+            display: inline-block;
+            margin: 0 15px;
+            padding: 2px 3px;
+            height: 20px;
+            line-height: 16px;
+            color: $fff;
+            font-size: 14px;
+            background: #D6D6D6;
+          }
+        }
+      }
+    }
+
+    .order-invoice-box{
+      background: $fff;
+      min-height: 140px;
+      border: solid 1px $borderBottom;
+      padding: 20px 20px;
+      margin: 30px 0;
+      >h5{
+        font-size: 16px;
+        color: $c33;
+        margin: 0;
+        // font-weight: bold;
+      }
+      p{
+        margin: 0;
+      }
+    }
+
+    .order-invoice-list{
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      div{
+        width:130px;
+        background: $fff;
+        height:46px;
+        background:rgba(255,255,255,1);
+        border:1px solid rgba(229,229,229,1);
+        border-radius:4px;
+        margin-right: 37px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        &.active{
+          border: solid 2px $red;
+        }
+        &.active:after{
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 25px;
+          height: 16px;
+          background: url(./../image/img_checked.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .order-goods-information-box{
+      width: 100%;
+      .order-goods-information-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        h5{
+          margin: 0;
+          flex: 1;
+          font-size: 16px;
+        //   font-weight: bold;
+          color: $c33;
+        }
+      }
+      .order-goods-information-head{
+        width: 100%;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        background: $fff;
+        border: solid 1px $borderBottom;
+        div{
+          flex: 1;
+          color: $c33;
+          text-align: center;
+          &:first-child{
+            flex: 3;
+            width: 0;
+          }
+        }
+      }
+      .order-goods-information-body{
+        margin-top: 20px;
+        >div{
+          margin-bottom: 10px;
+          background: $fff;
+          border: solid 1px $borderBottom;
+        }
+        h3{
+          height: 50px;
+          line-height: 50px;
+          padding: 0 30px;
+          color: $c33;
+          background: $fff;
+          font-size: 14px;
+          border: solid 1px $borderBottom;
+          border-bottom: none;
+          margin: 0;
+        }
+        .order-goods-information-list{
+          display: flex;
+          justify-items: center;
+          align-items: center;
+          border-bottom: solid 1px $borderBottom;
+          >div{
+            flex: 1;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+            span{
+              color: $red;
+            }
+            &:nth-child(1){
+              flex: 3;
+              width: 0;
+              display: flex;
+              img{
+                width: 80px;
+                height: 80px;
+                margin:0 10px 0 30px;
+              }
+              .goods-content-order{
+                flex: 1;
+                font-size: 12px;
+                text-align: left;
+                h1{
+                  color: $c33;
+                  font-size: 12px;
+                }
+                p{
+                  margin: 0;
+                  color: $c99;
+                }
+              }
+            }
+          }
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+        .order-note{
+          width: 100%;
+          padding: 10px;
+          background: #FCFCFC;
+          display: flex;
+          span{
+            color: $c33;
+            font-size: 12px;
+            line-height: 30px;
+          }
+          input{
+            border:none;
+            flex: 1;
+            resize: none;
+            background: #FCFCFC;
+            height: 30px;
+            outline: none;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    .order-other-information-box{
+      h3{
+        color: $c33;
+        font-size: 16px;
+        border-bottom: dashed 1px $borderBottom;
+        margin: 20px 0 15px 0;
+        line-height: 40px;
+        // font-weight: 600;
+      }
+      textarea{
+        height: 100px;
+      }
+      .order-amount-detail{
+        width: 100%;
+        padding: 10px;
+        >div{
+          display: flex;
+          padding: 0 20px;
+          p{
+            margin: 0;
+            text-align: right;
+            flex: 1;
+            color: $c33;
+            font-size: 14px;
+            span{
+              color: $red;
+            }
+          }
+          >span{
+            color: $red;
+            font-size: 14px;
+            width: 110px;
+            text-align: right;
+          }
+        }
+      }
+      .order-amount-number{
+        width: 100%;
+        background: $fff;
+        border: solid 1px $borderBottom;
+        padding: 30px;
+        h2{
+          text-align: right;
+          color: $c33;
+          font-size: 14px;
+          margin: 0 0 10px 0;
+          span{
+            display: inline-block;
+            width: 110px;
+            text-align: right;
+            color: $red;
+          }
+        }
+        p{
+          margin: 0;
+          color: $c66;
+          text-align: right;
+        }
+      }
+
+      .order-sub-box{
+        width: 100%;
+        text-align: right;
+        padding-top: 40px;
+        button{
+          width: 150px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .ant-btn-primary{
+    background: $red !important;
+    border: solid 1px $red !important;
+  }
+  .ant-btn-primary:hover,.ant-btn-primary:focus{
+    color: $fff !important;
+  }
+}

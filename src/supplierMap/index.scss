@@ -1,0 +1,149 @@
+@import "./../colorConfig";
+.supplier-map-box{
+  width: 100%;
+  height: 100%;
+  .supplier-map{
+    width: 100%;
+    position: relative;
+    //height: calc(100% - 316px);
+    //height: calc(100% - 232px);
+    height: 750px;
+    >div{
+      height: 100% !important;
+    }
+    .map-marker{
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      background: url(./../image/dingwei.png) no-repeat;
+      background-size: 100% 100%;
+      margin-top: -30px;
+      margin-left: -15px;
+    }
+
+    .supplier-map-list-box{
+      width: 440px;
+      height: 90% !important;
+      position: absolute;
+      left: 30px;
+      top: 5%;
+
+      .supplier-map-list-search{
+        width: 100%;
+        height: 42px;
+        margin-bottom: 15px;
+        .ant-input{
+          font-size: 14px;
+        }
+        .ant-input:hover,.ant-input:active,.ant-input:focus{
+          border-color: $red;
+        }
+        .ant-input:focus{
+          box-shadow: 0 0 0 2px rgba(255,0,0,.2);
+        }
+        .ant-btn-primary,.ant-btn-primary:hover,.ant-btn-primary:focus{
+          background-color: $red;
+          border-color: $red;
+        }
+      }
+
+      .supplier-map-search-list{
+        width: 100%;
+        max-height: 625px;
+        background: $fff;
+        padding-bottom: 10px;
+        >ul{
+          width: 100%;
+          >li{
+            width: 100%;
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            justify-content: center;
+            img{
+              width: 70px;
+              height: 70px;
+              margin-right: 10px;
+            }
+            .supplier-search-goods-content{
+              flex: 1;
+              width: 0;
+              h3{
+                a{
+                  font-size: 14px;
+                  color: $c33;
+                  margin-bottom: 5px;
+                  font-weight: 500;
+                }
+              }
+              p{
+                margin: 0;
+                color: $c66;
+                font-size: 12px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                i{
+                  margin-right: 2px;
+                }
+              }
+            }
+            &:hover{
+              background: #ECECEC;
+            }
+          }
+        }
+      }
+
+      .supplier-search-list-head{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #FCE4E0;
+        color: $c33;
+        padding: 0 15px;
+        font-size: 14px;
+        span{
+          color: $red;
+        }
+      }
+    }
+    .supplier-map-site-box{
+      width: 339px;
+      height: 90% !important;
+      position: absolute;
+      right: 30px;
+      top: 5%;
+      .ant-input{
+        font-size: 14px;
+      }
+      .ant-input:hover,.ant-input:active,.ant-input:focus{
+        border-color: $red;
+      }
+      .ant-input:focus{
+        box-shadow: 0 0 0 2px rgba(255,0,0,.2);
+      }
+      .ant-btn-primary,.ant-btn-primary:hover,.ant-btn-primary:focus{
+        background-color: $red;
+        border-color: $red;
+      }
+    }
+  }
+  .home-nav{
+    margin-bottom: 0px;
+  }
+  .map_data_box{
+    width: 374px;
+    height: 481px;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+  .map_data_num{
+    height: 47px;
+  }
+  .map_data_goods{
+    border-top: 1px rgba(0,0,0,0.09) solid;
+    height: 433px;
+    overflow-y:scroll;
+  }
+}

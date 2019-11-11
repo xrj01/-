@@ -1,0 +1,83 @@
+@import "./../colorConfig";
+.businessAccount-center-box{
+  width: 100%;
+  .businessAccount-center-content-box{
+    width: 1200px;
+    margin: auto;
+    //padding-bottom: 47px;
+    margin-top: 15px;
+    .ant-breadcrumb{
+      padding: 16px 0;
+      font-size: 12px;
+      color: $c66;
+    }
+
+    .businessAccount-center-content{
+      width: 100%;
+      display: flex;
+      .businessAccount-content-nav{
+        width: 210px;
+        padding-top: 10px;
+        background: $fff;
+        //margin-right: 15px;
+        .businessAccount-nav-box{
+          border-bottom: solid 1px $borderBottom;
+          padding-bottom: 10px;
+          h6{
+            color: $c33;
+            font-size: 16px;
+            line-height: 40px;
+            margin: 0 !important;
+            padding-left: 20px;
+            img{
+              //width: 20px;
+              //height: 20px;
+              margin-right: 6px;
+              vertical-align: sub;
+            }
+          }
+          a{
+            line-height: 30px;
+            display: block;
+            padding-left: 50px;
+            color: $c66;
+            font-size: 14px;
+            border-left: solid 2px $fff;
+            &.active{
+              border-left: solid 2px #2277E6;
+              background: #f7fbff;
+            }
+            /* &:hover{
+              border-left: solid 2px $red;
+              background: #FFFAFA;
+            } */
+          }
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+      .businessAccount-content-right-content{
+        width: 0;
+        flex: 1;
+      }
+    }
+  }
+}
+.b_1{
+  //width: 19px !important;
+  //height: 17px !important;
+}
+.b_2{
+  /* width: 18px !important;
+  height: 18px !important; */
+}
+.b_3{
+  width: 19px !important;
+  height: 18px !important;
+}
+
+
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+  background: #f6fbff !important; 
+}

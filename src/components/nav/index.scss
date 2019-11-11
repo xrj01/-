@@ -1,0 +1,255 @@
+@import "./../../colorConfig";
+$navBottom:#D62420;
+$navAll:#D20602;
+$fff:#fff;
+$e33:#333;
+$classBg:#FFFFFF;
+$gray:#818181;
+$red:#D01D00;
+$listBorder:#F7F6F6;
+.home-class-box{
+  width: 100%;
+  .home-nav{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background:#434849;
+    .home-nav-box{
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      .home-nav-all{
+        width: 210px;
+        height: 40px;
+        background: $navAll;
+        text-align: center;
+        color: $fff;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        z-index: 999;
+        i{
+          font-size: 16px;
+        }
+        .home-class-secondary{
+          width: 1003px;
+          min-height: 480px;
+          border:solid 1px $red;
+          position: absolute;
+          z-index: 9999;
+          padding:5px 10px 5px 10px;
+          left: 197px;
+          top: 10px;
+          background: $fff;
+          display: none;
+          transition: 1s all;
+          overflow-y: auto;
+          .home-class-secondary-box{
+            display: flex;
+            ul{
+              flex: 1;
+              li{
+                line-height: 40px;
+                display: flex;
+                padding-left: 10px;
+                span{
+                  width: 100px;
+                  a{
+                    font-size: 14px;
+                  }
+                }
+                a{
+                  margin-right: 20px;
+                  font-size: 12px;
+                  color: #666;
+                  font-weight: 500;
+                  &:hover{
+                    color: $red;
+                  }
+                }
+                &:hover{
+                  background: $f2f2;
+                }
+                .level2_box{
+                  width: 180px;
+                  text-align: right;
+                  display: flex;
+                  a{
+                    flex: 1;
+                    width: 0;
+                    margin-right: 20px !important;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    &:hover{
+                      color: $red;
+                    }
+                  }
+                  .jiao{
+                    width: 10px;
+                    margin-right: 20px;
+                    color: #333;
+                  }
+                }
+                .home-class-secondary-box-a{
+                  flex: 1;
+                  display: flex;
+                  flex-wrap: wrap;
+                }
+              }
+            }
+          }
+        }
+        .home-class-list{
+          width: 210px;
+          height: 490px;
+          position: absolute;
+          left: 0;
+          top: 40px;
+          z-index: 100;
+          background: $f2f2;
+          >ul{
+            width: 100%;
+            height: 480px;
+            overflow-y: auto;
+            >li{
+              padding: 0 14px;
+              text-align: left;
+              line-height: 30px;
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              h4{
+                margin: 0 0 -4px 0;
+                height: 40px;
+                line-height: 40px;
+                color: #333;
+                font-size: 14px;
+                transition: all .3s;
+                width: 100%;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                a{
+                  color: $e33;
+                }
+                i{
+                 font-size: 20px;
+                  color: $e33;
+                  vertical-align: sub;
+                }
+              }
+              >p{
+                margin: 0 0 10px 0;
+                width: 100%;
+                height: 14px;
+                overflow: hidden;
+                line-height: 12px;
+                >a{
+                  color: $gray;
+                  margin-right: 8px;
+                  font-size: 12px;
+                  font-weight: 200;
+                  width: auto !important;
+                }
+              }
+              &:hover{
+                background: $red;
+                h4{
+                  color: $fff;
+                  padding-left: 5px;
+                  i{
+                    color: $fff;
+                  }
+                }
+                >a{
+                  color: $fff;
+                }
+                p{
+                  >a{
+                    color: #fff!important;
+                  }
+                }
+              }
+              &:hover .home-class-secondary{
+                display: block;
+              }
+            }
+          }
+        }
+        &:hover .home-class-list{
+          display: block !important;
+        }
+      }
+      >ul{
+        flex: 1;
+        display: flex;
+        li{
+          height: 40px;
+          line-height: 40px;
+          padding: 0 20px;
+          margin-left: 2px;
+          a{
+            font-size: 16px;
+            color: $fff;
+            position: relative;
+          }
+          &:hover{
+            a:before{
+              content: "";
+              display: block;
+              width: 100%;
+              height: 2px;
+              background: #fff;
+              position: absolute;
+              left: 0;
+              bottom: -2px;
+            }
+          }
+          &.active{
+            a:before{
+              content: "";
+              display: block;
+              width: 100%;
+              height: 2px;
+              background: #fff;
+              position: absolute;
+              left: 0;
+              bottom: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lvel2List{
+    display: block;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-align: left;
+    font-weight: 500;
+    color: #333 !important;
+    font-size: 14px !important;
+    float: left;
+  }
+.head_nav_title{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  .head_nav_title:hover{
+    cursor: pointer;
+  }
+  .class_list_lv3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+}

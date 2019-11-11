@@ -1,0 +1,102 @@
+@import "./../../colorConfig";
+.audit-order-warp{
+  width: 100%;
+  .audit-order-box{
+    width: 1200px;
+    margin: 30px auto 50px;
+    background: $fff;
+    padding: 88px 20px;
+    .audit-order-ok-box{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      height: 230px;
+      margin: auto;
+      i{
+        font-size: 68px;
+        color: #7ABD54;
+      }
+      h4{
+        text-align: center;
+        font-size: 16px;
+        color: $c33;
+        font-weight: bold;
+        margin: 22px 0 15px 0;
+      }
+      p{
+        color: $c99;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    .audit-order-step{
+      padding: 0 200px 20px 260px;
+      width: 100%;
+      .description-box{
+        text-align: left;
+        p{
+          margin: 0;
+          color: $c99;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .ant-steps-item-content{
+        width: 100%;
+      }
+      .ant-steps-item-description{
+        position: relative;
+        left: -32px;
+        top: 36px;
+      }
+      .ant-steps-item-icon{
+        margin: 0;
+      }
+      .ant-steps-item{
+        height: 150px;
+      }
+      .ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item-description{
+        max-width: 100%;
+      }
+      .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon{
+        color: #7ABD54;
+      }
+      .ant-steps-item-finish .ant-steps-item-icon{
+        border-color: #7ABD54;
+      }
+      .ant-steps-item-process .ant-steps-item-icon{
+        background: #7ABD54;
+        border-color: #7ABD54;
+      }
+      .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title::after{
+        background-color: #7ABD54;
+      }
+    }
+
+    .audit-order-button{
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+      button{
+        width: 200px;
+        height: 46px;
+        font-size: 16px;
+        margin: 0 15px;
+      }
+      .ant-btn:hover{
+        border: solid 1px $red !important;
+        color: $red !important;
+      }
+      .ant-btn-primary{
+        background: $red !important;
+        border: solid 1px $red !important;
+      }
+      .ant-btn-primary:hover,.ant-btn-primary:focus{
+        color: $fff !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import "./../colorConfig";
+.helpCenter-box{
+    background-color: $f6f;
+    font-weight:400;
+    color:$c66;
+    .helpCenter-container{
+        width: 1200px;
+        margin: 0 auto;
+        .helpCenter-header{
+            height: 50px;
+            line-height: 50px;
+            a{
+                font-size:12px;
+                color:$c66;
+            }
+            .color-red{
+                color: $d20;
+            }
+        }
+        .helpCenter-banner{
+            //height:300px;
+            width: 1200px;
+        }
+        .helpCenter-banner img{
+            //height:300px;
+            width: 1200px;
+            overflow: hidden;
+        }
+        // 常见问题
+        .helpCenter-faq{
+            .helpCenter-faq-header{
+                font-size:24px;
+                margin: 44px 0 40px 0;
+            }
+            .helpCenter-faq-list{
+                height:260px;
+                background:$fff;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .helpCenter-faq-ul{
+                    margin-top: 20px;
+                    margin-left: 32px;
+                    border-left: 1px solid $e8e;
+                    .helpCenter-faq-li{
+                        padding-left: 35px;
+                        font-size: 16px;
+                        line-height: 40px;
+                        .helpCenter-faq-li-icon{
+                            color: $red;
+                            margin-right: 10px;
+                        }
+                        a{
+                            color: $c99;
+                        }
+                    }
+                }
+                :first-child{
+                    border-left: none;
+                    margin-left: 0px;
+                }
+                :last-child{
+                    margin-right: 59px;
+                }
+            }
+
+        }
+        //联系客服
+        .helpCenter-contact-service{
+            .helpCenter-contact-header{
+                margin: 39px 0 41px 0;
+                font-size:24px;
+            }
+            .helpCenter-contact-box{
+                margin-bottom: 106px;
+                height: 260px;
+                background:$fff;
+                display: flex;
+                flex-direction: row;
+                p{
+                    margin: 0;
+                }
+                .helpCenter-contact-box-left{
+                    border-right: 1px solid $e8e;
+                    margin: 20px 0;
+                    padding-right: 67px;
+                    .helpCenter-contact-margin{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 50px 0 50px 57px;
+                        .helpCenter-contact-box-ft{
+                            margin: 29px 0 0 41px;
+                            line-height:40px;
+                        }
+
+                    }
+                    
+                }
+                .helpCenter-contact-box-right{
+                    margin: 20px 0;
+                    .helpCenter-contact-marginlf{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 50px 0 50px 117px;
+                    }
+                    .helpCenter-contact-ft{
+                        margin: 4px 0 0 40px;
+                        line-height:40px;
+                    }
+                }
+                .helpCenter-contact-box-img{
+                    width:120px;
+                    height:120px;
+                    border:2px solid $red;
+                    border-radius:50%;
+                    text-align: center;
+                    padding-top: 25px;
+                }
+                .helpCenter-contact-ft30{
+                    font-size: 30px;
+                    color: $c66;
+                }
+                .helpCenter-contact-ft18{
+                    font-size:18px;
+                    color: $c66;
+                }
+                .helpCenter-contact-ft24{
+                    font-size:24px;
+                    color: $red;
+                }
+            }
+        }
+    }
+    .link:hover{
+       color: $red!important;
+    }
+
+}

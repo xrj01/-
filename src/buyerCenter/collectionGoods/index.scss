@@ -1,0 +1,48 @@
+@import "./../../colorConfig";
+.collection-goods-warp{
+  width: 100%;
+  height: 100%;
+  background: $fff;
+  padding: 15px 15px 15px 16px;
+  font-size: 14px;
+  h5{
+    width: 100%;
+    border-bottom: solid 1px $borderBottom;
+    line-height: 30px;
+    font-size: 14px;
+    span{
+      display: inline-block;
+      padding: 0 6px;
+      position: relative;
+      color: $c33;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background: $red;
+        width: 100%;
+      }
+    }
+  }
+  .collection-goods-box{
+    width: 100%;
+    
+    padding: 10px 0;
+    ul{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        min-width: 228px;
+        max-width: 228px;
+        margin-bottom: 10px;
+      }
+      li:nth-child(4n){
+        margin-right: 0;
+      }
+    }
+  }
+}

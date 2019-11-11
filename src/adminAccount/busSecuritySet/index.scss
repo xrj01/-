@@ -1,0 +1,145 @@
+@import './../../colorConfig';
+.busSecuritySet-security-box{
+    
+  width:975px;
+  height: 644px;
+  margin-left: 15px;
+  margin-bottom: 47px;
+    
+  .busSecuritySet-security-content{
+      height: 644px;
+      background: $fff;
+      .busSecuritySet-security-title{
+        margin: 0 25px;
+        padding: 50px 0 50px 7px;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+        color: #666;
+      }
+      .busSecuritySet-security-row{
+          padding: 50px 0 50px 7px;
+          height: 140px;
+          margin: 0 25px;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .text-center{
+              display: flex;
+              align-items: center;
+              /* .busSecuritySet-security-pwd{
+                  margin-left: 15px;
+              } */
+          }
+          :nth-child(1){
+              line-height: 32px;
+          }
+          .busSecuritySet-icon{
+              vertical-align: middle;
+          }
+          .busSecuritySet-icon-tel{
+              margin-left: 5px;
+          }
+          .busSecuritySet-security-col{
+              //border-right: 1px solid #eee;
+              //padding: 0 20px 0 40px;
+              margin-right: 20px;
+              font-weight: bold;
+              font-size: 14px;
+          }
+          
+          
+      }
+      .busSecuritySet-security-reminder{
+          margin: 100px 25px 0 25px;
+          border: 1px solid #eee;
+          
+          .busSecuritySet-reminder-title{
+              background: #EEF5FF;
+              padding: 17px;
+          }
+          .busSecuritySet-reminder-list{
+              padding: 42px 0 72px 27px;
+              li{
+                  margin-top: 6px;
+                  margin-left: 14px;
+                  list-style-type:disc !important;
+              }
+              
+          }
+      }
+    }
+    .ft12{
+        font-size: 12px;
+        //margin-top: 6px;
+    }
+    
+}
+
+.busSecuritySet-pwd-form,.busSecuritySet-tel-form{
+    //margin-top: 20px !important;
+    input,button{
+        height: 40px;
+    }
+    input{
+        height: 40px;
+        width: 367px !important;
+    }
+    .send-code{
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .busSecuritySet-tel-form-text{
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+    .ant-input-affix-wrapper .ant-input-suffix {
+        right: -91px;
+    }
+    .ant-input-suffix{
+        right: -55px !important;
+    }
+    .ant-form-item{
+        margin-bottom: 25px;
+    }
+    .ant-form-explain, .ant-form-extra{
+        position: absolute;
+    } 
+    
+}
+.busSecuritySet-security-amendPwd,.busSecuritySet-security-amendTel{
+    .ant-modal-footer{
+        border-top:none !important;
+    }
+}
+
+.busSecuritySet-edit-model{
+    
+    .ant-modal-header{
+        //border-bottom: none;
+        padding: 20px;
+    }
+    .ant-modal-title{
+        //text-align: center;
+        font-size:16px;
+        //font-weight: bold;
+        color: #333;
+        //margin-top: 20px;
+    }
+    .ant-modal-body{
+        padding: 40px 40px 15px;
+        max-height: 500px;
+        overflow: auto;
+    }
+    .ant-modal-footer{
+        border-top: none;
+        padding: 0px 0px 40px 0px;
+        //text-align: center;
+
+    }
+    .busSecuritySet-edit-btn{
+        /* text-align: left;
+        margin-left: 175px; */
+        //text-align: center;
+    }
+}

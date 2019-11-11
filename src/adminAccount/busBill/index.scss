@@ -1,0 +1,27 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.busBill-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .busBill-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .class-pagination-box{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+        .iconwj-zd{
+            margin-right: 10px;
+            font-size: 22px;
+            color: #2277E6;
+        }
+        .mt20{
+            margin-top: 7px;
+        }
+    }
+}

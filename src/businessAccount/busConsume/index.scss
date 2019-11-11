@@ -1,0 +1,67 @@
+/* $fff:#FFFFFF;
+$c66:#666666;
+$e8e:#EEEEEE; */
+@import "./../../colorConfig";
+.consume-statistics-box{
+    width:975px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+    background:$fff;
+    .consume-statistics-container{
+        min-height: 644px;
+        margin: 0 15px;
+        .consume-statistics-title{
+            font-size: 14px;
+            color: $B2277E6;
+            border-bottom: 1px solid #EEEEEE;
+            .titles{
+                line-height: 1;
+                font-weight: bold;
+                padding-bottom: 10px;
+                display: inline-block;
+                border-bottom: 2px solid  $B2277E6;
+            }
+        }
+        .consume-statistics-overview{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: start;
+            &>div{
+                border: 1px solid $EEE;
+                //border-top: none;
+                width: 190px;
+                height: 100px;
+                margin-left: -1px;
+                padding: 28px 0 0 18px;
+                .ant-statistic-title{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #333;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                }
+                .ant-statistic-content{
+                    font-size: 22px;
+                    line-height: 1;
+                    color: #333;
+                }
+                .returned-money .ant-statistic-content{
+                    color: $red;
+                }
+                
+            }
+            &>div:first-child{
+                margin: 0;
+            }
+        }
+        
+    }
+    .padding-b-40{
+        padding-bottom: 60px;
+    }
+    
+}
+.consume-img{
+    height: 16px;
+    margin-top: 5px;
+}

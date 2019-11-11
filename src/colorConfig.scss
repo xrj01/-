@@ -1,0 +1,217 @@
+$fff:#fff;
+$borderBottom:#EBEAEA;
+$f6f:#F6F5F5; // ← body背景灰
+$e8e:#E8E8E8;
+$e7e:#E7E7E7;
+$c33:#333;
+$c66:#666666;
+$f2f2:#EAEEEF;
+$c87:#878787;
+$c99:#999;
+$h4Bottom:#D63920;
+$iColor:#FE6648;
+$red:#D01D00;
+$d20:#D20602;
+$borderC:#CDCCCC;
+$b00:#004EA2;
+$f3f:#F3F3F3;// ← 淡灰色边框
+$EEE:#EEEEEE; // ← 标题灰
+$B9B9:#9B9B9B; // ← 字体标题深灰
+$F6F6:#F6F6F6; // 详情页面标题背景
+$b:#000; // 详情页面标题按钮组成颜色黑
+$F0C400:#F0C400; // 详情标题组成文字黄
+$D2red:#D20602; // 侧边导航hover边框颜色
+$B2277E6: #2277E6; 
+$ea:#eaeaea;
+$fe:#FEEAEA;
+$ec:#ECECEC;
+$B277E6: #2277E6;
+.breadcrumb{
+  line-height: 40px !important;
+}
+.clear:after{ // ← 浮动塌陷修复代码
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.line-height-30{
+  line-height: 30px;
+}
+.margin-b-10{
+  margin-bottom: 10px;
+}
+.margin-b-20{
+  margin-bottom: 20px;
+}
+.margin-b-40{
+  margin-bottom: 40px;
+}
+.text-right{
+  text-align: right;
+}
+.input-w-100{
+  width: 100px !important;
+  text-align: center;
+}
+.color-red{
+  color: $red !important;
+}
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  //background-color: $f6f;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  //background-color: #fff;
+  background-color: #d6d6d6;
+}
+// ↓ -------- 设置全局分页器样式 ---------
+.page{
+  ul{
+    li:hover{
+      border-color:#D01D00 !important ;
+      a{
+        color:#D01D00 !important;
+        border-color:#D01D00 !important ;
+      }
+    }
+  }
+
+  .ant-pagination-item-active{
+    border-color:#D01D00 !important ;
+    a{
+      color:#D01D00 !important;
+    }
+  }
+}
+.ant-modal-confirm-btns{
+//   text-align: center;
+//   width: 100%;
+  button{
+    margin: 0;
+  }
+  .ant-btn:hover{
+    border: solid 1px $red !important;
+    color: $red !important;
+  }
+  .ant-btn-primary{
+    background: $red !important;
+    border: solid 1px $red !important;
+  }
+  .ant-btn-primary:hover,.ant-btn-primary:focus{
+    color: $fff !important;
+  }
+}
+.ant-btn-primary a{
+  color: #fff !important;
+}
+.modal{
+    .ant-modal-body{
+        padding-bottom: 0px;
+        padding-right: 40px; 
+    }
+  .ant-modal-footer{
+    border-top: none;
+    // text-align: center;
+    padding: 10px 25px;
+    padding-right: 40px;
+    button{
+      width: 80px;
+      height: 40px;
+      margin: 0 10px 0 0;
+      &:last-child{
+          margin-right: 0px;
+      }
+    }
+    div{
+    //   text-align: center;
+      button{
+        width: 80px;
+        height: 40px;
+        margin: 0 10px 0 0;
+        &:last-child{
+            margin-right: 0px;
+        }
+      }
+    }
+  }
+  .ant-btn:hover{
+    border: solid 1px $red !important;
+    color: $red !important;
+  }
+  .ant-btn-primary{
+    background: $red !important;
+    border: solid 1px $red !important;
+  }
+  .ant-btn-primary:hover,.ant-btn-primary:focus{
+    color: $fff !important;
+  }
+}
+
+.no-cursor{
+  cursor: no-drop !important;
+}
+.pagination{
+  text-align: center;
+  li:hover,li:focus{
+    border-color:#D01D00 !important ;
+    a{
+      color:#D01D00 !important;
+      border-color:#D01D00 !important ;
+    }
+  }
+
+  .ant-pagination-item-active{
+    border-color:#D01D00 !important ;
+    a{
+      color:#D01D00 !important;
+    }
+  }
+}
+
+.ant-input-number-handler-wrap{
+  display: none;
+}
+
+.confirm-order-modal{
+    .ant-modal-body{
+        padding: 40px !important;
+        & .anticon{
+            color: #faad14 !important;
+        }
+    }
+}
+.confirm-order-modal.cancel-modal{
+    .ant-modal-confirm-btns{
+        display: flex;
+        flex-direction: row-reverse;
+        button{
+            margin-left: 10px;
+            background: $red !important;
+            // border: solid 1px $ec !important;
+            color:#D01D00 !important;
+            border-color:#D01D00 !important ;
+            color: $fff !important;
+        }
+        .ant-btn-default{
+            background: #fff !important;
+            border: solid 1px $ec !important;
+            color: $c99 !important;
+        }
+        .ant-btn-default:hover{
+            border: solid 1px $red !important;
+            color: $red !important;
+          }
+    }
+}
+
+

@@ -1,0 +1,172 @@
+.login-warp{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  .login-box{
+    width: 100%;
+    height: 475px;
+    min-width: 1200px;
+    background: url(./../image/login-bg.jpg) no-repeat;
+    background-size: 1920px 475px;
+    background-position: center;
+    .login-inner-box{
+        position: relative;
+        height: 475px;
+        width: 1200px;
+        margin: auto;
+        .login-form-box{
+            width: 400px;
+            height: 375px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            // margin-top: -250px;
+            background: rgb(255,255,255);
+            border-radius: 10px;
+            padding: 40px;
+            .login-head{
+                line-height: 1;
+                margin-bottom: 40px;
+                text-align: center;
+                font-size: 20px;
+                color: #333;
+            }
+            .ant-form-item{
+                margin-bottom: 30px;
+            }
+            .ant-form-item-with-help{
+                margin-bottom: 11px;
+            }
+            .ant-input-affix-wrapper .ant-input-prefix{
+                left: 16px;
+                i{
+                    font-size: 28px;
+                    color: #999;
+                }
+            }
+            input{
+              height: 50px;
+              border-radius: 4px;
+              padding: 10px 14px;
+                text-indent: 32px;
+                line-height: 50px;
+                &:focus{
+                    border-color: #D01D00;
+                    box-shadow: 0 0 0 2px rgba(228, 0, 11, 0.2);
+                }
+                &:hover{
+                    border-color: #D01D00;
+                }
+            }
+            .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+                border-color: #D01D00;
+            }
+            .verification-code{
+                width: calc(100% - 120px);
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .verification-code-input input{
+                text-indent: 0;
+                // width: calc(100% - 120px);
+            }
+            .get-code-btn{
+                width: 105px;
+                height: 50px;
+                font-size: 14px;
+                &:hover{
+                    border-color: #D01D00;
+                    color: #D01D00;
+                }
+                &:focus{
+                    border-color: #D01D00;
+                    color: #D01D00;
+                }
+            }
+            .read-only-btn{
+                border-color: #D01D00;
+                color: #D01D00;
+                cursor: no-drop !important;
+            }
+            
+            .code-input{
+              width: 200px;
+            }
+            img{
+              width: 102px;
+              height: 40px;
+              margin-left: 10px;
+              cursor:pointer;
+            }
+            .btn-login{
+              width: 100%;
+              height: 50px;
+              background: #D01D00;
+              border-color: #D01D00;
+              transition: all 0.3s;
+              &:hover{
+                  background: #D63920;
+                  border-color: #D63920;
+              }
+            }
+            .forget-password{
+                display: flex;
+                justify-content: space-between;
+            //   text-align: right;
+              margin-top: 10px;
+              line-height: 1;
+              margin-bottom: 0;
+              a,span{
+                  color: #999;
+                  cursor: pointer;
+              }
+            }
+          }
+    }
+    
+    .dx_captcha_loading-style-embed{
+    
+      position: absolute;
+      right: 11.5%;
+      top: 54%;
+    }
+    /* .code-box{
+      position: absolute;
+      right: 13.5%;
+      top: 50%;
+    } */
+  }
+  .footer{
+      width: 100%;
+      .footer-inner{
+        width: 1200px;
+        margin: auto;
+        padding: 25px 0 0 0;
+        div:first-child{
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            color: #999;
+            margin-bottom: 16px;
+            a{
+                color: #999;
+            }
+            .ant-divider{
+                background: #999;
+            }
+        }
+        .copyRight{
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            line-height: 1;
+        }
+      }
+  }
+}
+/* .dx_captcha_loading-style-embed{
+    
+    position: absolute;
+    right: 13.5%;
+    top: 50%;
+} */

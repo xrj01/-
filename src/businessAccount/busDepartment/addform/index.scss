@@ -1,0 +1,31 @@
+.addDepartmentForm{
+    .ant-select-selection--single{
+        height: 42px;
+    }
+    .ant-select-selection-selected-value{
+        margin-top: 4px;
+    }
+    .ant-cascader-input.ant-input,input{
+        width:398px;
+        height: 40px;
+        border-radius: 4px;
+    }
+    .ant-form-extra{
+        font-size: 12px;
+        color: #C9C9C9;
+        //margin-left: 10px;
+    }
+    .ant-cascader-picker-arrow{
+        right: -10px;
+    }
+    
+}
+.ant-cascader-menu{
+    min-width: 79px !important;
+    .ant-cascader-menu-item{
+        max-width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
